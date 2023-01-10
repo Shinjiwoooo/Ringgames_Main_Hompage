@@ -1,0 +1,67 @@
+/* footer */
+#wrap #footer {
+    position: relative;
+    z-index: 1;
+    /* overflow: hidden;
+    display: block; */
+    width: 100%;
+}
+
+#wrap #footer .footer_wrapper .wrap {
+    width: 79.167vw;
+    margin: 0 auto;
+    height: 58px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#wrap #footer .footer_wrapper {
+    width: 100%;
+    height: 281px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+
+}
+
+#wrap #footer .wrap .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#wrap #footer .wrap .container .logo {
+    background-image: url("/images/CI.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 197px;
+    height: 29px;
+}
+
+#wrap #footer .wrap .container ul {
+    display: flex;
+}
+
+#wrap #footer .wrap .container ul li {
+    margin: 0px 26px 0px 0px;
+}
+
+#wrap #footer .wrap .container ul li a {
+    font-weight: 300;
+    font-size: 0.938vw;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: #6C6C6C;
+}
+
+#wrap #footer .wrap .copyright {
+    font-weight: 300;
+    font-size: 0.833vw;
+    color: #6C6C6C;
+}
