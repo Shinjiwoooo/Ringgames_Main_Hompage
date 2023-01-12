@@ -198,7 +198,7 @@ left:0px;
     opacity: 0; */
 }
 
- #wrap #main .wrap .section_wrapper #section_banner .Preview_container .Preview_wrapper .indicator::after {
+#wrap #main .wrap .section_wrapper #section_banner .Preview_container .Preview_wrapper .indicator::after {
     content: "";
     display: block;
     width: 100%;
