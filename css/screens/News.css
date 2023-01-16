@@ -54,7 +54,7 @@ footer:1 */
 }
 
 #wrap #main .wrap .section_wrapper #section_news .container_wrap {
-    width: 1520px;
+    width: 79.167vw;
     height: 696px;
     margin: 0 auto;
     background-color: #cfd6cf4d;
@@ -71,16 +71,17 @@ footer:1 */
 
 #wrap #main .wrap .section_wrapper #section_news  .container_wrap  .news_list {
 display: flex;
+border-top: 1px solid  #000000;
+border-bottom: 1px solid #000000;
 }
 
 #wrap #main .wrap .section_wrapper #section_news  .container_wrap  .news_list li{
     z-index: 2;
     width:493px;
-    height:535px;
+    /* height:535px; */
     display: flex;
     margin:0 20px 0 0;
-    border-top: 1px solid  #000000;
-    border-bottom: 1px solid #000000;
+ 
 }
 
 #wrap #main .wrap .section_wrapper #section_news  .container_wrap  .news_list li a{
@@ -111,9 +112,10 @@ display: flex;
     
 }
 #wrap #main .wrap .section_wrapper #section_news .container_wrap  .news_list li a img{
-   width:493px;
-   height: 280px;
-   margin-bottom:14px;
+    width:25.677vw;
+    /* height: 280px; */
+    margin-bottom:14px;
+    object-fit: cover;
 }
 #wrap #main .wrap .section_wrapper #section_news .container_wrap  .news_list li a h1{
     margin:0 0 16px 0;
@@ -132,14 +134,13 @@ display: flex;
 
     font-weight: 300;
     font-size: 20px;
-    line-height: 24px;
     letter-spacing: -0.02em;
     color: #929292;
     margin: 0 0 0 20px;
 }
 
 
-#wrap #main .wrap .section_wrapper #section_news .container_wrap  .news_list li a h1 .line{
+#wrap #main .wrap .section_wrapper #section_news .container_wrap  .news_list li a h1 .bar{
     display:inline-block;
     position: absolute; 
     width:2px;
@@ -149,22 +150,16 @@ display: flex;
 
 #wrap #main .wrap .section_wrapper #section_news .container_wrap  .pagination_wrap{
     width: 100%;
-    height:50px;
-    margin-top: 50px;
+    display: block;
+    margin-top: 70px;
     text-align: center;
     background: #cbdf1a;
 }
 
 
-#wrap #main .wrap .section_wrapper #section_news .container_wrap  .pagination_wrap .pagination-inner{
-    display: inline-block;
+
+.pagination{
     position: relative;
-    padding: 0 68px;
-    background-color: darkblue;
+    background-color: rgb(255, 232, 249);
 }
-
-.swiper-pagination{
-    background-color:pink;
-}
-
 
