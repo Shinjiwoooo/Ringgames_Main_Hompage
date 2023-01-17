@@ -55,7 +55,7 @@ footer:1 */
 
 #wrap #main .wrap .section_wrapper #section_news .container_wrap {
     width: 79.167vw;
-    height: 696px;
+    /* height: 696px; */
     margin: 0 auto;
     background-color: #cfd6cf4d;
     margin-top: 172px;
@@ -81,7 +81,6 @@ border-bottom: 1px solid #000000;
     /* height:535px; */
     display: flex;
     margin:0 20px 0 0;
- 
 }
 
 #wrap #main .wrap .section_wrapper #section_news  .container_wrap  .news_list li a{
