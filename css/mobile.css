@@ -282,42 +282,69 @@
  /* ----------------------------------carrers-------------------------------------- */
 
     
-    #wrap #main .wrap .section_wrapper #section_we .menu_wrapper {
-        width:90%;
-        margin: 0px auto;
-    }
-    #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul .tal {
-        border-top: none;
-        height: 75px;
-    }
-    #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul li {
-        width: 100%;
-        height: 99px;
-    }
-
-    #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul {
-        padding: 59px 0 40px 0;
-    }
+    
     #wrap #main .wrap .section_wrapper #section_we {
         width: 100%;
         height: 471px;
         padding: 0px 0px 40px;
     }
+
+    #wrap #main .wrap .section_wrapper #section_we .menu_wrapper {
+        width:90.234vw;
+        margin: 0px auto;
+    }
+
+    #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul {
+        padding: 59px 0 40px 0;
+    }
+
+    #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul li {
+        width: 100%;
+        height: 99px;
+    }
+
+    #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul .tal {
+        border-top: none;
+        height:75px;
+    }
+
     #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul .tal .bold {
         font-size: 46px;
         line-height: 55px;
         letter-spacing: -0.02em;
+        padding-bottom: 29px;
     }
 
     #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul li a {
-        font-weight: 500;
         font-size: 40px;
         font-size: 24.3158px;
         line-height: 29px;
         letter-spacing: -0.02em;
+    } 
+
+    #wrap #main .wrap .section_wrapper #section_content ul{     
+        width:90.234vw;
     }
-    
+
+    #wrap #main .wrap .section_wrapper #section_content ul li {
+        padding:46px 0 0 0 ;
+        width:33.33%;
+    }
+
+
+    #wrap #main .wrap .section_wrapper #section_content ul li img {
+        margin: 0 0 42px 0;
+    }
+
+    #wrap #main .wrap .section_wrapper #section_content ul li p {
+        font-size: 1.953vw;
+        line-height: 24px;
+        margin: 54px 0 62px 0;
+    }
+
 /* ----------------------------------contact-------------------------------------- */
+
+
     #wrap #main .wrap .section_wrapper #section_contact {
         height:489px;
     }
@@ -369,73 +396,8 @@
     #wrap #main .wrap .section_wrapper #section_contact .container_wrap .container_contact .location {
         margin: 0 164px 0 0;
     }
-    #wrap #main .wrap .section_wrapper #section_content {
-        margin: 0 auto;
-    width: 93%;
-    }
+    
 
-    #wrap #main .wrap .section_wrapper #section_content ul {
-        padding-top: 60px;
-    }
-    #wrap #main .wrap .section_wrapper #section_content ul li {
-        width: 296px;
-        /* height: 296px; */
-        /* margin: 0 18px 0 18px; */
-        /* background: #FFFFFF; */
-        /* padding: 46px 0 0 0; */
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* align-items: center; */
-        /* position: relative; */
-        /* flex-wrap: wrap; */
-        /* padding: 46px 0 0 0; */
-    }
-/* 
-    #wrap #main .wrap .section_wrapper #section_content ul li:nth-child(){
-    margin:0px; */
-    #wrap #main .wrap .section_wrapper #section_we .menu_wrapper {
-        width: 80%;
-        margin: 0px auto;
-    }
-    
-    #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul {
-        padding: 70px 0 50px 0;
-    }
-    
-    #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul .tal {
-        border-top: none;
-        height: 107px;
-    }
-    
-    #wrap #main .wrap .section_wrapper #section_we {
-        width: 100%;
-        height: 827px;
-        padding: 0 0 50px 0;
-    }
-    
-    #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul li {
-        width: 100%;
-        height: 200px;
-    }
-    
-    #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul li a {
-        font-weight: 500;
-        font-size: 40px;
-        font-size: 24.3158px;
-        line-height: 29px;
-        letter-spacing: -0.02em;
-        font-family: 'Pretendard';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 42px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        letter-spacing: -0.02em;
-        color: #565656;
-    }
-    
 }
 
 @media screen and (max-width:740px) {
@@ -772,5 +734,60 @@
         line-height: 24px;
         font-size: 24px;
         line-height: 34px;
+    }
+
+    #wrap #main .wrap .section_wrapper #section_content ul {
+        width: 82.703vw;
+    }
+
+    #wrap #main .wrap .section_wrapper #section_content ul li {
+        background: #FFFFFF;
+        padding: 46px 0 0 0;
+        width:50%;
+    }
+
+    #wrap #main .wrap .section_wrapper #section_content ul li img {
+        margin: 0 0 37px 0;
+    }
+
+    #wrap #main .wrap .section_wrapper #section_content ul li p {
+        font-size: 3.784vw;
+        line-height: 24px;
+        margin: 28px 0 36px 0;
+    }
+
+    #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul .tal .bold {
+        font-size: 7.027vw;
+       padding-bottom: 55px;
+    
+    }
+    
+    #wrap #main .wrap .section_wrapper #section_content ul li .circle {
+        /* width: 20px; */
+        /* height: 20px; */
+        /* background: #F0F2F2; */
+        /* z-index: 2; */
+        /* border-radius: 100%; */
+        /* position: absolute; */
+        top: 60%;
+        /* left: 50%; */
+        /* transform: translate(-50%); */
+    }
+    #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul {
+        padding: 70px 0 50px 0;
+    }
+    #wrap #main .wrap .section_wrapper #section_we {
+        width: 100%;
+        height: 827px;
+        padding: 0px 0px 0px;
+    }
+    #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul li {
+        width: 100%;
+        height: 200px;
+    }
+
+    #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul .tal {
+      
+        height: 107px;
     }
 }
