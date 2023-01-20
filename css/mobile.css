@@ -95,7 +95,7 @@
     } */
 
     #wrap #main .wrap .section_wrapper #section_banner .Preview_container {
-        width: 19.531vw;
+        width: 20%;
     }
 
     #wrap #main .wrap .section_wrapper #section_banner .Preview_container .Preview_wrapper {
@@ -103,6 +103,17 @@
         width: calc(50% - 10px);
     }
     
+    
+    #wrap #main .wrap .section_wrapper #section_banner .Preview_container .Preview_wrapper .indicator {
+        position: absolute;
+        width: 100%;
+        height: 3.5px;
+        z-index: 3;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+        transition: opacity 0.3s ease 0s, visibility 0.3s ease 0s;
+        margin: 2.8px 0 0 0;
+    }
 
     #wrap #main .wrap .section_wrapper #section_product .header .title_wrapper {
         font-size: 24px;
@@ -131,9 +142,6 @@
     #wrap #main .wrap .section_wrapper #section_menu .menu_wrapper ul li a {
         font-size: 40px;
     }
-
-
-
 
 
     /* footer */
@@ -279,8 +287,32 @@
     }
 
  /* ----------------------------------carrers-------------------------------------- */
-
     
+    #wrap #main .wrap .section_wrapper #section_career .banner .title_container .title p {
+        font-weight: 700;
+        font-size: 30px;
+        letter-spacing: -0.02em;
+        color: rgb(255, 255, 255);
+        text-shadow: rgba(29, 5, 108, 0.7) 3px 3px 8px;
+        margin: 0px 0px 17px;
+    }
+
+    #wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_pc {
+        width: 55px;
+        height: 55px;
+    }
+
+    #wrap #main .wrap .section_wrapper #section_welfare .banner .title p {
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #000000;
+    }
+
     
     #wrap #main .wrap .section_wrapper #section_we {
         width: 100%;
@@ -341,6 +373,11 @@
         line-height: 24px;
         margin: 54px 0 62px 0;
     }
+    #wrap #main .wrap .section_wrapper #section_career .banner .title_container .title p {
+        font-size: 30px;
+        margin: 0px 0px 17px;
+    }
+    
 
 /* ----------------------------------contact-------------------------------------- */
 
@@ -417,10 +454,16 @@
     #wrap #main .wrap .section_wrapper #section_banner .Preview_container {
         width: 33.784vw;
         left: 0;
-        width: 40%;
-        bottom: 12px;
+        width: 30%;
+        bottom: 16px;
+        left: 16px;
+    }
+    #wrap #main .wrap .section_wrapper #section_banner .Preview_container .Preview_wrapper .indicator {
+        height: 4px;
+        margin: 5px 0 0 0;
     }
 
+    
     #wrap #main .wrap .section_wrapper #section_banner .banner {
         /* width: 100%; */
         height:auto;
@@ -513,8 +556,6 @@
         line-height: 43px;
     }
 
-
-
     /* footer */
     #wrap #footer .footer_wrapper {
         height: 154px;
@@ -605,7 +646,7 @@
         line-height: 34px;
         /* letter-spacing: -0.02em; */
     }
-    /*--------------------------------------- News------------------------------------------- */
+    /*-------------------------------------------------------News------------------------------------------------------- */
     
     #wrap #main .wrap .section_wrapper #section_news .container_wrap {
         width: 95%;
@@ -672,17 +713,7 @@
         margin: 0 0 13px 0;
     }
 
-
-
-
-
-
-
-
-
-
-
-    /* ----------------------------------contact-------------------------------------- */
+    /* --------------------------------------------------contact--------------------------------------------------------- */
     
     #wrap #main .wrap .section_wrapper #section_contact .container_wrap .container_contact {
         flex-direction: column-reverse;
@@ -742,6 +773,9 @@
         line-height: 34px;
     }
 
+
+    /* -------------------------------------------------carrer-------------------------------------------------------------- */
+
     #wrap #main .wrap .section_wrapper #section_content ul {
         width: 82.703vw;
     }
@@ -762,14 +796,15 @@
         margin: 28px 0 36px 0;
     }
 
+    
+    #wrap #main .wrap .section_wrapper #section_content ul li .circle {
+        top: 60%;
+    }
+
     #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul .tal .bold {
         font-size: 7.027vw;
         padding-bottom: 55px;
     
-    }
-    
-    #wrap #main .wrap .section_wrapper #section_content ul li .circle {
-        top: 60%;
     }
 
     #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul {
@@ -798,5 +833,81 @@
     #wrap #main .wrap .section_wrapper #section_we .menu_wrapper {
         width: 82.703vw;
         margin: 0px auto;
+    }
+    #wrap #main .wrap .section_wrapper #section_career .banner .title_container .title p {
+        font-weight: 700;
+        font-size: 30px;
+        letter-spacing: -0.02em;
+        color: rgb(255, 255, 255);
+        text-shadow: rgb(29 5 108 / 70%) 3px 3px 8px;
+        margin: 0px 0px 17px;
+    }
+
+    #wrap #main .wrap .section_wrapper #section_career .banner #pc {
+        width: 100%;
+        /* height: 100vh; */
+        object-fit: cover;
+        display:none;
+    }
+    
+    #wrap #main .wrap .section_wrapper #section_career .banner #mobile {
+        display: block;
+    }
+
+    
+
+    #wrap #main .wrap .section_wrapper #section_career .banner .title_container {
+        width:100%;
+
+    }
+
+    #wrap #main .wrap .section_wrapper #section_welfare .banner .title  {
+        width:100%;
+        }
+        
+    
+    #wrap #main .wrap .section_wrapper #section_welfare .banner .title p {
+        font-weight: 700;
+        font-size: 7.027vw;
+        line-height: 36px;
+        letter-spacing: 0.04em;
+    }
+
+
+    #wrap #main .wrap .section_wrapper #section_welfare .banner img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+    }
+    
+    #wrap #main .wrap .section_wrapper #section_career .banner .title_container .title p {
+        font-weight: 700;
+        font-size: 7.027vw;
+        line-height: 46px;   
+        margin: 0px 0px 14px;
+    }
+
+    .wrap .section_wrapper #section_career .banner .title_container .btn_pc {
+       display: none;
+    }
+    #wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_mobile{
+        display: block;
+        width: 314px;
+        height: 90px;
+        position: relative;
+    }
+    #wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_mobile p{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate( -50%, -50% );
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 43px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
     }
 }

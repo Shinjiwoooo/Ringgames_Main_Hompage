@@ -207,6 +207,7 @@ left:0px;
     /* overflow: hidden;
     visibility: hidden;
     opacity: 0; */
+    margin:5px 0 0 0;
 }
 
 #wrap #main .wrap .section_wrapper #section_banner .Preview_container .Preview_wrapper .indicator::after {
@@ -218,6 +219,7 @@ left:0px;
     border-radius: inherit;
     transform: translateX(-1%);
     /* transform: translateX(100%); */
+
 } 
 
 #wrap #main .wrap .section_wrapper #section_banner .scroll_container {
