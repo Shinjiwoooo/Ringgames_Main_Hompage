@@ -51,7 +51,7 @@
                 <div class="section_wrapper">
                     <section id="section_news">
                         <div class="container_wrap">
-                            <h2>News</h2>                  
+                            <h2>News</h2>
                             <div class="swiper mySwiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
@@ -98,7 +98,6 @@
 
                                                 </a>
                                             </li>
-                                        
                                         </ul>
                                     </div>
                                     <div class="swiper-slide">
@@ -148,26 +147,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="pagination_wrap">
-                                <div class="pagination-inner">
-                            
-                                    <ol class="pagination">
-                                        <li class="pagination-item">
-                                            <button type="button" class="is-active">1</button>
-                                        </li>
-                                        <li class="pagination-item">
-                                            <button type="button" >2</button>
-                                        </li>
-                                        <li class="pagination-item">
-                                            <button type="button" >3</button>
-                                        </li>
-                                    </ol>
-                                 
-                                    <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div>
-
-                                </div>
-                            </div> -->
+                            <div class="pagination_wrap">
+                                <!-- <div class="pagination-inner"> -->
+                                    <div class="fib">
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <ol class="pagination">
+                                        </ol>
+                                    </div>
+                                <!-- </div> -->
+                            </div>
                         </div>
                     </section>
                 </div>
@@ -215,20 +204,20 @@
 
     <!-- Initialize Swiper -->
     <script>
-            var swiper = new Swiper(".mySwiper", {
-             pagination: {
-             el: ".pagination",
-             type:'bullets',
-             clickable: true,
-            renderBullet: function (index, className) {
-            return '<span class="' + className + '">' + (index + 1) + "</span>";
-          },
-        },
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".pagination",
+                type: 'bullets',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + (index + 1) + "</span>";
+                },
+            },
             navigation: {   // 버튼
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
-                    },
-      });
+            },
+        });
     </script>
 
 

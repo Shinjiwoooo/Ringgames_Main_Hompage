@@ -50,14 +50,14 @@ footer:1 */
     position: relative;
     top: 0px;
     left: 0px;
-    height:998px;
+    height:916px;
 }
 
 #wrap #main .wrap .section_wrapper #section_news .container_wrap {
     width: 79.167vw;
     /* height: 696px; */
     margin: 0 auto;
-    background-color: #cfd6cf4d;
+    /* background-color: #cfd6cf4d; */
     margin-top: 172px;
 }
 #wrap #main .wrap .section_wrapper #section_news .container_wrap h2 {
@@ -149,16 +149,66 @@ border-bottom: 1px solid #000000;
 
 #wrap #main .wrap .section_wrapper #section_news .container_wrap  .pagination_wrap{
     width: 100%;
+    /* height: 30px; */
     display: block;
-    margin-top: 70px;
+    margin-top: 60px;
     text-align: center;
-    background: #cbdf1a;
+    /* background: #cbdf1a; */
+    position: relative;
 }
 
-
+.fib{
+    width:176px;
+    height: 30px;
+    left:50%;
+    transform: translatex(-50%);
+    position: relative;
+}
 
 .pagination{
-    position: relative;
-    background-color: rgb(255, 232, 249);
+    position: absolute;
+    top:-1px;
+    /* background-color: rgb(144, 124, 255); */
 }
 
+
+.swiper-button-next{
+    width: 18px;
+    height:30px;
+ background: url(/images/btn_arrow.png) no-repeat;
+ transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.swiper-button-prev{
+    background: url(/images/btn_arrow.png) no-repeat;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+   display: none;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+   display: none;
+}
+
+
+.swiper-pagination-bullet-active {
+    background: transparent !important;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    cursor: pointer;
+}
+.swiper-pagination-bullet {
+
+    background:transparent!important;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap,10px)!important;
+
+}
