@@ -79,7 +79,7 @@ footer:1 */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* background-color: #fff; */
 }
 
 #wrap #main .wrap .section_wrapper #section_career .banner .title_container .title p {
@@ -96,18 +96,70 @@ footer:1 */
 #wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_pc {
     width: 90px;
     height: 90px;
+    position: relative;
 }
 
-#wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_pc p {
+#wrap #main .wrap .section_wrapper #section_career .banner .title_container  a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    /* background-color: rgb(231, 0, 0); */
+}
+
+#wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_mobile_2 {
+    position: absolute;
+    width: 314px;
+    height: 90px;
+    /* top: 0; */
+    opacity: 0;
+    transition: 0.1s;
+    /* background-color: rgb(236, 125, 125); */
+}
+
+#wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_mobile_2 p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+
+#wrap #main .wrap .section_wrapper #section_career .banner .title_container  a:hover .btn_mobile_2 {
+    opacity: 1;
+}
+
+
+#wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_mobile {
+    display: none;
+}
+
+#wrap #main .wrap .section_wrapper #section_career .banner #pc {
+    width: 100%;
+    /* height: 100vh; */
+    object-fit: cover;
+    display: block;
+    /* display: none; */
+}
+
+#wrap #main .wrap .section_wrapper #section_career .banner #mobile {
     display: none;
 }
 
 
-/* scroll */
+/* ---------------------------------------------scroll--------------------------------------------- */
 #wrap #main .wrap .section_wrapper #section_career .scroll_container {
     position: absolute;
     top: 87%;
-    left: 49.375vw;
+    left: 48.375vw;
 }
 
 
@@ -170,6 +222,7 @@ footer:1 */
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 
 #wrap #main .wrap .section_wrapper #section_welfare .banner .title p {
     font-family: 'Pretendard';
@@ -318,61 +371,47 @@ footer:1 */
 
 #wrap #main .wrap .section_wrapper #section_content ul li img {
     /* background-color: green; */
-    margin: 0 0 67px 0;
+    margin: 0 0 2.5em 0;
 }
 
-#wrap #main .wrap .section_wrapper #section_content ul li .line_1 {
+#wrap #main .wrap .section_wrapper #section_content ul li .middle_line {
+    /* width: 100%;
+    border: 1px solid #F0F2F2; */
+    background-image: url(/images/benefit_icon/middle_line.png);
+    width: 325px;
+    height:20px;
+}
+
+#wrap #main .wrap .section_wrapper #section_content ul li .text_box{
     width: 100%;
-    border: 1px solid #F0F2F2;
+    height:92px;
+    /* background-color: teal; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#wrap #main .wrap .section_wrapper #section_content ul li .circle {
+
+
+/* #wrap #main .wrap .section_wrapper #section_content ul li .circle {
     width: 20px;
     height: 20px;
     background: #F0F2F2;
     z-index: 2;
     border-radius: 100%;
-    /* line-height: 360px;
-    text-align: center; */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%);
-
-
-}
+} */
 
 #wrap #main .wrap .section_wrapper #section_content ul li p {
     font-weight: 500;
     font-size: 1.354vw;
     letter-spacing: -0.02em;
     color: #000000;
-    margin: 64px 0 76px 0;
+    text-align: center;
+
 }
 
 
-
-/* #wrap #main .wrap .section_wrapper #section_content ul li .two_line{
-    margin:64px 0 51px 0;
-} */
-
-
-/* 
-#wrap #main .wrap .section_wrapper #section_content ul li:nth-child(4n){
-    margin:0px;
-} */
-#wrap #main .wrap .section_wrapper #section_career .banner #pc {
-    width: 100%;
-    /* height: 100vh; */
-    object-fit: cover;
-    display: block;
-    /* display: none; */
-}
-
-#wrap #main .wrap .section_wrapper #section_career .banner #mobile {
-    display: none;
-}
-
-#wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_mobile {
-    display: none;
-}
