@@ -8,8 +8,27 @@ indicator:3
 footer:1 */
 
 .border {
-    border-bottom: 2px solid #89D4FF;
+    position: absolute;
+    height: 2px;
+    bottom: 26px;
+    background: #89D4FF;
     transition: all 0.2s ease-in-out 0s;
+}
+.border_index {
+    width: 47px;
+    right:612px;
+}
+.border_Aboutus{
+    width: 69px;
+}
+.border_News {
+    width: 45px;
+}
+.border_Careers {
+    width: 60px;
+}
+.border_Contact{
+    width: 62px;
 }
 
 #wrap {
