@@ -7,28 +7,35 @@ Preview::after :3
 indicator:3
 footer:1 */
 
-.border {
+.border_line {
     position: absolute;
     height: 2px;
     bottom: 26px;
-    background: #89D4FF;
+    background-color: #89D4FF;
     transition: all 0.2s ease-in-out 0s;
 }
 .border_index {
-    width: 47px;
-    right:612px;
+    width: 44px;
+    left: 1246px;
 }
 .border_Aboutus{
-    width: 69px;
+    width: 65px;
+    left:1367px;
 }
+
 .border_News {
-    width: 45px;
+    width: 43px;
+    left: 1511px;
 }
+
 .border_Careers {
-    width: 60px;
+    width: 56px;
+    left: 1632px;
 }
+
 .border_Contact{
-    width: 62px;
+    width: 61px;
+    left: 1765px;
 }
 
 #wrap {
@@ -191,6 +198,7 @@ footer:1 */
     position: absolute;
     bottom: 3.125vw;
     right: 3.125vw;
+    
     /* background-color: pink; */
 
 }
