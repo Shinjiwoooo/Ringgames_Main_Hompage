@@ -13,18 +13,25 @@
 }
 
 #wrap #header .m_menu {
- width:24px;
- height:16px;
- display: flex;
- flex-direction: column;
- justify-content: space-between;
- display: none;
+    width: 24px;
+    height: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    cursor: pointer;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+    z-index: 10;
 }
 
 #wrap #header .m_menu li {
-width: 100%;
-height:2px;
-background: #FFFFFF;
+    width: 100%;
+    height: 2px;
+    background: #FFFFFF;
 }
 
 #wrap #header .wrap {
@@ -33,20 +40,35 @@ background: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 }
 
-#wrap #header .wrap > a {
+#wrap #header .wrap>a {
     width: 281px;
 }
 
 #wrap #header .wrap .container {
     display: flex;
-    
+
 }
 
 #wrap #header .wrap .container .menu {
     display: flex;
+    position: relative;
+}
+
+#wrap #header .wrap .container .menu .hoverLineCase {
+    position: absolute;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+}
+
+#wrap #header .wrap .container .menu .hoverLineCase .hoverLine {
+    height: 100%;
+    background: rgb(137, 212, 255);
+    position: absolute;
+    transition: 0.5s;
 }
 
 #wrap #header .wrap .container ul li {
@@ -57,5 +79,31 @@ background: #FFFFFF;
 
 #wrap #header .wrap .container ul li a {
     color: #FFFFFF;
-    font-size:16px;
+    font-size: 16px;
+}
+
+/* 2023.02.04 모바일 헤더 메뉴 구현 */
+
+#m_wrap {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    right: -300px;
+    top: 0;
+    background-color: #000000;
+    padding: 100px 19px 0 16px;
+}
+
+
+#m_wrap .container .containerMenu li {
+    margin-bottom: 28px;
+}
+
+#m_wrap .container .containerMenu li a {
+    color: #fff;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
 }

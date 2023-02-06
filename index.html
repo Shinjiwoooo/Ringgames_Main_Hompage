@@ -6,15 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <!-- <link rel="stylesheet" href="./css/mobile.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <title>RingGamesHomepage</title>
 </head>
 
-<body>
-    <!-- 젠코딩
-        div#wrap>header#header>(div.container>(div.left>a)>(div.right>ul>li*5))+main#main>div.section_wrapper$*3 -->
+
+<body class="home">
     <div id="wrap">
-        <header id="header" >
+        <header id="header">
             <div class="wrap">
                 <a href="#">
                     <img src="images/CI.png" alt="">
@@ -22,7 +21,7 @@
                 <div class="container">
                     <ul class="menu">
                         <li>
-                            <a href="index.html" >Home</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li>
                             <a href="Aboutus.html">About us</a>
@@ -36,76 +35,121 @@
                         <li>
                             <a href="Contact.html">Contact</a>
                         </li>
-                        <div class="border_line border_Contact"></div>
-                        
+
+                        <div class="hoverLineCase">
+                            <div class="hoverLine"></div>
+                        </div>
                     </ul>
+
                 </div>
                 <ul class="m_menu">
-                    <li></li>
-                    <li></li>
+                    <li class="bar_01"></li>
+                    <li class="bar_02"></li>
                 </ul>
+            </div>
+            <!-- 2023.02.04 모바일 메뉴 구현 -->
+            <div id="m_wrap">
+                <div class="top">
+
+                </div>
+                <div class="container">
+                    <ul class="containerMenu">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="Aboutus.html">About us</a>
+                        </li>
+                        <li>
+                            <a href="News.html">News</a>
+                        </li>
+                        <li>
+                            <a href="Careers.html">Careers</a>
+                        </li>
+                        <li>
+                            <a href="Contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
         <main id="main">
             <div class="wrap">
-                <div class="section_wrapper">
-                    <section id="section_banner">
-                        <div class="banner">
-                            <img id="pc" src="./images/SFTY_banner.jpg" alt="">
-                            <img id="mobile" src="images/SFTY_banner_mb.jpg" alt="">
-                            <!-- :: after -->
-                        </div>
-                        <div id="mobileCSS" class="content">
-                            <div class="content_wrap">
-                                <div class="header">
-                                    <img src="./images/logo_icon.png" alt="">
-                                    <div class="title">Stella Fantasy</div>
-                                </div>
-                                <div class="body">
-                                    <div class="title">
-                                        <p class="firstParam">In search of your star</p>
-                                        <p>that will light up this sky once again</p>
+                <div class="slider">
+                    <!-- 슬라이드 -->
+                    <ul class="list swiper-wrapper">
+                        <li class="swiper-slide">
+                            <div class="section_wrapper">
+                                <section id="section_banner">
+                                    <div class="banner">
+                                        <img id="pc" src="./images/SFTY_banner.jpg" alt="">
+                                        <img id="mobile" src="images/SFTY_banner_mb.jpg" alt="">
+                                        <!-- :: after -->
                                     </div>
-                                </div>
-                                <div class="footer">
-                                    <a href="https://www.stellafantasy.io/">
-                                        <div class="click_btn">More</div>
-                                    </a>
-                                    <a href="https://bsc-marketplace.stellafantasy.io/market/character?">
-                                        <div class="click_btn">Marketplace</div>
-                                    </a>
-                                </div>
+                                    <div id="mobileCSS" class="content">
+                                        <div class="content_wrap">
+                                            <div class="header">
+                                                <img src="./images/logo_icon.png" alt="">
+                                                <div class="title">Stella Fantasy</div>
+                                            </div>
+                                            <div class="body">
+                                                <div class="title">
+                                                    <p class="firstParam">In search of your star</p>
+                                                    <p>that will light up this sky once again</p>
+                                                </div>
+                                            </div>
+                                            <div class="footer">
+                                                <a href="https://www.stellafantasy.io/">
+                                                    <div class="click_btn">More</div>
+                                                </a>
+                                                <a href="https://bsc-marketplace.stellafantasy.io/market/character?">
+                                                    <div class="click_btn">Marketplace</div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
                             </div>
-                        </div>
-                        <div class="Preview_container">
-                            <div class="Preview_wrapper">
-                                <div class="Preview"">
-                                        <img src=" ./images/company_banner.jpg" alt="">
-                                    <!-- ::after -->
-                                </div>
-                                <div class="indicator">
-                                    <!-- ::after -->
-                                </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="section_wrapper">
+                                <section id="section_banner">
+                                    <div class="banner">
+                                        <img id="pc" src="./images/company_banner.jpg" alt="">
+                                        <img id="mobile" src="images/company_banner_mb.jpg" alt="">
+                                        <!-- :: after -->
+                                    </div>
+                                    <div id="mobileCSS" class="content">
+                                        <div class="content_wrap">
+                                            <div class="header">
+                                                <img src="./images/logo_icon.png" alt="">
+                                                <div class="title">Stella Fantasy</div>
+                                            </div>
+                                            <div class="body">
+                                                <div class="title">
+                                                    <p class="firstParam">In search of your star</p>
+                                                    <p>that will light up this sky once again</p>
+                                                </div>
+                                            </div>
+                                            <div class="footer">
+                                                <a href="https://www.stellafantasy.io/">
+                                                    <div class="click_btn">More</div>
+                                                </a>
+                                                <a href="https://bsc-marketplace.stellafantasy.io/market/character?">
+                                                    <div class="click_btn">Marketplace</div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
                             </div>
-                            <div class="Preview_wrapper">
-                                <div class="Preview">
-                                    <img src="./images/SFTY_banner.jpg" alt="">
-                                    <!-- ::after -->
-                                </div>
-                                <div class="indicator">
-                                    <!-- ::after -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="scroll_container">
-                            <div class="scroll_wrapper">
-                                <div class="mouse">
-                                </div>
-                                <div class="line">
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                        </li>
+                    </ul>
+                    <!-- 슬라이드 프리뷰 (pagination) -->
+                    <ul class="slide_tit">
+                        <li></li>
+                        <li></li>
+                    </ul>
                 </div>
                 <div class="section_wrapper">
                     <section id="section_product">
@@ -127,7 +171,7 @@
                                                 </div>
                                             </a>
                                         </div>
-                                    </div> 
+                                    </div>
                                     <div class="container_footer_1">
                                         <h2>Stella Fantasy</h2>
                                         <a href="https://www.stellafantasy.io/">
@@ -135,7 +179,7 @@
                                                 <p>More</p>
                                             </div>
                                         </a>
-                                    </div>  
+                                    </div>
                                 </div>
                                 <div class="container">
                                     <img src="./images/stella_fantasy_banner.jpg" alt="">
@@ -148,7 +192,7 @@
                                                 </div>
                                             </a>
                                         </div>
-                                    </div> 
+                                    </div>
                                     <div class="container_footer_1">
                                         <h2>Stella Fantasy</h2>
                                         <a href="https://www.stellafantasy.io/">
@@ -156,7 +200,7 @@
                                                 <p>More</p>
                                             </div>
                                         </a>
-                                    </div>  
+                                    </div>
                                 </div>
                                 <div class="container">
                                     <img src="./images/stella_fantasy_banner.jpg" alt="">
@@ -169,7 +213,7 @@
                                                 </div>
                                             </a>
                                         </div>
-                                    </div> 
+                                    </div>
                                     <div class="container_footer_1">
                                         <h2>Stella Fantasy</h2>
                                         <a href="https://www.stellafantasy.io/">
@@ -177,7 +221,7 @@
                                                 <p>More</p>
                                             </div>
                                         </a>
-                                    </div>  
+                                    </div>
                                 </div>
                                 <div class="container">
                                     <img src="./images/stella_fantasy_banner.jpg" alt="">
@@ -190,7 +234,7 @@
                                                 </div>
                                             </a>
                                         </div>
-                                    </div> 
+                                    </div>
                                     <div class="container_footer_1">
                                         <h2>Stella Fantasy</h2>
                                         <a href="https://www.stellafantasy.io/">
@@ -198,7 +242,7 @@
                                                 <p>More</p>
                                             </div>
                                         </a>
-                                    </div>  
+                                    </div>
                                 </div>
                                 <div class="container">
                                     <img src="./images/stella_fantasy_banner.jpg" alt="">
@@ -211,7 +255,7 @@
                                                 </div>
                                             </a>
                                         </div>
-                                    </div> 
+                                    </div>
                                     <div class="container_footer_1">
                                         <h2>Stella Fantasy</h2>
                                         <a href="https://www.stellafantasy.io/">
@@ -219,14 +263,14 @@
                                                 <p>More</p>
                                             </div>
                                         </a>
-                                    </div>  
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </section>
                 </div>
                 <div class="section_wrapper">
-                    <section id="section_menu">
+                    <section id="section_menu" class="blackBg">
                         <div class="menu_wrapper ">
                             <ul>
                                 <li><a href="Aboutus.html">About Us</a></li>
@@ -239,6 +283,7 @@
                 </div>
             </div>
         </main>
+
         <footer id="footer">
             <div class="footer_wrapper">
                 <div class="wrap">
@@ -277,6 +322,48 @@
         </footer>
     </div>
     <script src="js/header_menu.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            slider();
+        })
+
+        function slider() {
+            $('.slider .slide_tit > li').each(function (index, item) {
+
+            }).promise().done(function () {
+
+                //슬라이드 시작
+                var swiper = new Swiper('.slider', {
+                    loop: true,
+                    slidesPerView: 1,
+                    autoplay: {
+                        delay: 5000,//CSS animation과 시간 동일하게
+                        disableOnInteraction: false
+                    },
+                    fadeEffect: {
+                        crossFade: true
+                    },
+                    //pagination 텍스트 & progress bar 형태로 변경
+                    pagination: {
+                        el: '.slider .slide_tit',
+                        clickable: 'true',
+                        type: 'bullets',
+                        renderBullet: (index, className) => {
+                            return `<li class=${className}><div class="bar_wrap bar_wrap${index}"><span class="bar bar${index}"></span></div></li>`;
+                        },
+                    },
+
+                })
+            });
+        }
+
+
+    </script>
 </body>
 
 </html>

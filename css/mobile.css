@@ -92,17 +92,17 @@
     } */
 
 
-    #wrap #main .wrap .section_wrapper #section_banner .Preview_container {
+    #wrap #main .wrap .section_wrapper .Preview_container {
         width: 20%;
     }
 
-    #wrap #main .wrap .section_wrapper #section_banner .Preview_container .Preview_wrapper {
+    #wrap #main .wrap .section_wrapper .Preview_container .Preview_wrapper {
         position: relative;
         width: calc(50% - 10px);
     }
 
 
-    #wrap #main .wrap .section_wrapper #section_banner .Preview_container .Preview_wrapper .indicator {
+    #wrap #main .wrap .section_wrapper .Preview_container .Preview_wrapper .indicator {
         position: absolute;
         width: 100%;
         height: 3.5px;
@@ -284,17 +284,18 @@
         padding: 18px 0 22px 0;
     }
 
-    .swiper-button-next{
-    width:12px !important;
-    height:20px !important;
-    background: url(/images/btn_arrow.png) no-repeat;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
+    .swiper-button-next {
+        width: 12px !important;
+        height: 20px !important;
+        background: url(/images/btn_arrow.png) no-repeat;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
     }
-    .swiper-button-prev{
-        width:12px !important;
-        height:20px !important;
+
+    .swiper-button-prev {
+        width: 12px !important;
+        height: 20px !important;
         background: url(/images/btn_arrow.png) no-repeat;
         background-repeat: no-repeat;
         background-size: cover;
@@ -306,27 +307,29 @@
         /* background-color: rgb(144, 124, 255); */
     }
 
-    
-    .fib{
-     
-        width:135px;
+
+    .fib {
+
+        width: 135px;
         height: 20px;
-        left:50%;
+        left: 50%;
         transform: translatex(-50%);
         position: relative;
     }
 
-    
-    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
 
 
         font-size: 16px;
         color: #000000;
     }
 
-    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-        margin: 0 var(--swiper-pagination-bullet-horizontal-gap,6px)!important;
-    
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 6px) !important;
+
     }
 
     /* ----------------------------------carrers-------------------------------------- */
@@ -345,9 +348,7 @@
         height: 55px;
     }
 
-    #wrap #main .wrap .section_wrapper #section_career  .scroll_container {
-        
-    }
+    #wrap #main .wrap .section_wrapper #section_career .scroll_container {}
 
     #wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_mobile_2 {
         position: absolute;
@@ -371,7 +372,7 @@
         letter-spacing: -0.02em;
         color: #FFFFFF;
     }
-    
+
 
     #wrap #main .wrap .section_wrapper #section_welfare .banner .title p {
         font-family: 'Pretendard';
@@ -536,7 +537,7 @@
     }
 
     /* main */
-    #wrap #main .wrap .section_wrapper #section_banner .Preview_container {
+    #wrap #main .wrap .section_wrapper .Preview_container {
         width: 33.784vw;
         left: 0;
         width: 30%;
@@ -544,7 +545,7 @@
         left: 16px;
     }
 
-    #wrap #main .wrap .section_wrapper #section_banner .Preview_container .Preview_wrapper .indicator {
+    #wrap #main .wrap .section_wrapper .Preview_container .Preview_wrapper .indicator {
         height: 4px;
         margin: 5px 0 0 0;
     }
@@ -591,9 +592,7 @@
     /* //////// */
 
 
-    #wrap #main .wrap .section_wrapper #section_banner .banner {
-    
-    }
+    #wrap #main .wrap .section_wrapper #section_banner .banner {}
 
     #wrap #main .wrap .section_wrapper #section_banner .banner #pc {
         display: none;
@@ -621,12 +620,13 @@
         background-size: contain;
         width: 95.676vw;
         position: relative;
-    }    
-    #wrap #main .wrap .section_wrapper #section_product .container_wrap .content_wrap .container .darkness{
+    }
+
+    #wrap #main .wrap .section_wrapper #section_product .container_wrap .content_wrap .container .darkness {
         display: none;
     }
-        
-    
+
+
     #wrap #main .wrap .section_wrapper #section_product .container_wrap .content_wrap .container .container_footer_1 {
         display: flex;
         position: absolute;
@@ -816,7 +816,7 @@
     #wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list li a>span {
         position: absolute;
         z-index: 2;
-        margin:2% 0 0 2%;
+        margin: 2% 0 0 2%;
 
     }
 
@@ -1008,7 +1008,7 @@
         width: 100%;
 
     }
-    
+
     #wrap #main .wrap .section_wrapper #section_career .banner .title_container .title p {
         font-weight: 700;
         font-size: 7.027vw;

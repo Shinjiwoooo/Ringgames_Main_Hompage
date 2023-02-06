@@ -46,11 +46,11 @@ footer:1 */
     margin: 0 auto;
 }
 
-#wrap #main .wrap .section_wrapper #section_news  {
+#wrap #main .wrap .section_wrapper #section_news {
     position: relative;
     top: 0px;
     left: 0px;
-    height:916px;
+    height: 916px;
 }
 
 #wrap #main .wrap .section_wrapper #section_news .container_wrap {
@@ -60,6 +60,7 @@ footer:1 */
     /* background-color: #cfd6cf4d; */
     margin-top: 172px;
 }
+
 #wrap #main .wrap .section_wrapper #section_news .container_wrap h2 {
     text-align: center;
     font-family: 'Pretendard';
@@ -69,26 +70,27 @@ footer:1 */
     margin-bottom: 28px;
 }
 
-#wrap #main .wrap .section_wrapper #section_news  .container_wrap  .news_list {
-display: flex;
-border-top: 1px solid  #000000;
-border-bottom: 1px solid #000000;
+#wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list {
+    display: flex;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
 }
 
-#wrap #main .wrap .section_wrapper #section_news  .container_wrap  .news_list li{
+#wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list li {
     z-index: 2;
-    width:493px;
+    width: 493px;
     /* height:535px; */
     display: flex;
-    margin:0 20px 0 0;
+    margin: 0 20px 0 0;
 }
 
-#wrap #main .wrap .section_wrapper #section_news  .container_wrap  .news_list li a{
+#wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list li a {
     display: block;
-    padding:29px 0 35px 0;
+    padding: 29px 0 35px 0;
     text-decoration: none;
 }
-#wrap #main .wrap .section_wrapper #section_news  .container_wrap  .news_list li a > span{
+
+#wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list li a>span {
     display: inline-block;
     width: 102px;
     height: 26px;
@@ -101,35 +103,39 @@ border-bottom: 1px solid #000000;
     color: #FFFFFF;
     border-radius: 5px;
 }
-#wrap #main .wrap .section_wrapper #section_news  .container_wrap  .news_list li a >p{
+
+#wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list li a>p {
 
     font-weight: 300;
     font-size: 22px;
     line-height: 28px;
     letter-spacing: -0.02em;
     color: #000000;
-    
-}
-#wrap #main .wrap .section_wrapper #section_news .container_wrap  .news_list li a img{
-    width:25.677vw;
-    /* height: 280px; */
-    margin-bottom:14px;
-    object-fit: cover;
-}
-#wrap #main .wrap .section_wrapper #section_news .container_wrap  .news_list li a h1{
-    margin:0 0 16px 0;
+
 }
 
-#wrap #main .wrap .section_wrapper #section_news .container_wrap  .news_list li a h1 .category{
+#wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list li a img {
+    width: 25.677vw;
+    /* height: 280px; */
+    margin-bottom: 14px;
+    object-fit: cover;
+}
+
+#wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list li a h1 {
+    margin: 0 0 16px 0;
+}
+
+#wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list li a h1 .category {
 
     font-weight: 500;
     font-size: 26px;
     letter-spacing: -0.02em;
     color: #000000;
-    margin:0 20px 0 0;
-    
+    margin: 0 20px 0 0;
+
 }
-#wrap #main .wrap .section_wrapper #section_news .container_wrap  .news_list li a h1 .day{
+
+#wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list li a h1 .day {
 
     font-weight: 300;
     font-size: 20px;
@@ -139,15 +145,15 @@ border-bottom: 1px solid #000000;
 }
 
 
-#wrap #main .wrap .section_wrapper #section_news .container_wrap  .news_list li a h1 .bar{
-    display:inline-block;
-    position: absolute; 
-    width:2px;
-    height:28px;
+#wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list li a h1 .bar {
+    display: inline-block;
+    position: absolute;
+    width: 2px;
+    height: 28px;
     background: #929292;
 }
 
-#wrap #main .wrap .section_wrapper #section_news .container_wrap  .pagination_wrap{
+#wrap #main .wrap .section_wrapper #section_news .container_wrap .pagination_wrap {
     width: 100%;
     /* height: 30px; */
     display: block;
@@ -157,58 +163,65 @@ border-bottom: 1px solid #000000;
     position: relative;
 }
 
-.fib{
-    width:176px;
+.fib {
+    width: 176px;
     height: 30px;
-    left:50%;
+    left: 50%;
     transform: translatex(-50%);
     position: relative;
 }
 
-.pagination{
+.pagination {
     position: absolute;
-    top:-1px;
-    /* background-color: rgb(144, 124, 255); */
+    top: -1px;
 }
 
 
-.swiper-button-next{
+.news .swiper-button-next {
     width: 18px;
-    height:30px;
- background: url(/images/btn_arrow.png) no-repeat!important;
- transform: matrix(-1, 0, 0, 1, 0, 0);
+    height: 30px;
+    background: url(/images/btn_arrow.png) no-repeat !important;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
 }
-.swiper-button-prev{
-    background: url(/images/btn_arrow.png) no-repeat!important;
+
+.news .swiper-button-prev {
+    background: url(/images/btn_arrow.png) no-repeat !important;
 }
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
-   display: none;
+
+.news .swiper-button-next:after,
+.news .swiper-rtl .swiper-button-prev:after {
+    display: none;
 }
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
-   display: none;
+
+.news .swiper-button-prev:after,
+.news .swiper-rtl .swiper-button-next:after {
+    display: none;
 }
 
 
-.swiper-pagination-bullet-active {
+.news .swiper-pagination-bullet-active {
     background: transparent !important;
 }
 
-.swiper-pagination-clickable .swiper-pagination-bullet {
+.news .swiper-pagination-clickable .swiper-pagination-bullet {
     cursor: pointer;
 }
-.swiper-pagination-bullet {
 
-    background:transparent!important;
+.news .swiper-pagination-bullet {
+
+    background: transparent !important;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+.news .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.news .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
 
     font-weight: 500;
     font-size: 18px;
     color: #000000;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 var(--swiper-pagination-bullet-horizontal-gap,10px)!important;
+.news .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.news .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px) !important;
 
 }
