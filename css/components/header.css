@@ -57,13 +57,17 @@
     position: relative;
 }
 
+/* 1. 고정해야 할 css 잡아두기 (부모영역) */
 #wrap #header .wrap .container .menu .hoverLineCase {
     position: absolute;
     bottom: -3px;
     width: 100%;
     height: 2px;
+    background-color: tomato;
 }
 
+
+/* 2. 움직여야 할 CSS 잡아두기 (부모영역 잡아두고 그안에서 자식 움직이는 형태 */
 #wrap #header .wrap .container .menu .hoverLineCase .hoverLine {
     height: 100%;
     background: rgb(137, 212, 255);

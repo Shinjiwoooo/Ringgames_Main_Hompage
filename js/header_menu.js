@@ -32,7 +32,7 @@ const HeaderMenu = {
                 //     item.style.transition = "0.5s";
                 // })
             }
-             else {
+            else {
                 // blackChangeBackground.style.background = "url('/images/change_black_bg.png')";
                 blackChangeBackground.style.background = "#051417";
                 blackChangeBackground.style.opacity = "1";
@@ -73,6 +73,7 @@ const HeaderMenu = {
         //  절대 하드코딩 금지.
 
         setTimeout(() => {
+            console.log(window.location.pathname.split("/")[window.location.pathname.split("/").length - 1])
             switch(window.location.pathname.split("/")[window.location.pathname.split("/").length - 1]) {
                 case 'index.html' :
                     targetLine.style.width = '42px';
@@ -100,37 +101,36 @@ const HeaderMenu = {
         
     },
 
-    menuLineCheck : function(currURL) {
-        const targetLine = document.querySelector(".hoverLine");
+    // menuLineCheck : function(currURL) {
+    //     const targetLine = document.querySelector(".hoverLine");
         
-        switch(currURL) {
-            case 'index.html' :
-                targetLine.style.width = '42px';
-                targetLine.style.left = '40px';
-            break
-            case 'Aboutus.html' :
-                targetLine.style.width = '68px';
-                targetLine.style.left = '160px';
-            break
-            case 'News.html' :
-                targetLine.style.width = '42px';
-                targetLine.style.left = '305px';
-            break
-            case 'Careers.html' :
-                targetLine.style.width = '56px';
-                targetLine.style.left = '425px';
-            break
-            case 'Contact.html' :
-                targetLine.style.width = '56px';
-                targetLine.style.left = '562px';
-            break
-        }
-    },
+    //     switch(currURL) {
+    //         case 'index.html' :
+    //             targetLine.style.width = '42px';
+    //             targetLine.style.left = '40px';
+    //         break
+    //         case 'Aboutus.html' :
+    //             targetLine.style.width = '68px';
+    //             targetLine.style.left = '160px';
+    //         break
+    //         case 'News.html' :
+    //             targetLine.style.width = '42px';
+    //             targetLine.style.left = '305px';
+    //         break
+    //         case 'Careers.html' :
+    //             targetLine.style.width = '56px';
+    //             targetLine.style.left = '425px';
+    //         break
+    //         case 'Contact.html' :
+    //             targetLine.style.width = '56px';
+    //             targetLine.style.left = '562px';
+    //         break
+    //     }
+    // },
 
     moveHoverLine : function(e) {
         const targetLine = document.querySelector(".hoverLine");
         // 내가 hover를 하고 있는 메뉴의 innerHTML 에 따라서 width 와 left 변경..
-
         switch(e.target.innerHTML) {
             case 'Home' :
                 targetLine.style.width = '42px';
@@ -224,11 +224,5 @@ const HeaderMenu = {
 
 HeaderMenu.init();
 
-
-
-
-
-
-                 
 
 
