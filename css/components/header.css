@@ -11,7 +11,8 @@
     top: 0px;
     left: 0px;
 }
-
+ 
+/* 모바일메뉴*/
 #wrap #header .m_menu {
     width: 24px;
     height: 16px;
@@ -20,7 +21,6 @@
     justify-content: space-between;
     display: none;
     cursor: pointer;
-
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -57,24 +57,6 @@
     position: relative;
 }
 
-/* 1. 고정해야 할 css 잡아두기 (부모영역) */
-#wrap #header .wrap .container .menu .hoverLineCase {
-    position: absolute;
-    bottom: -3px;
-    width: 100%;
-    height: 2px;
-    background-color: tomato;
-}
-
-
-/* 2. 움직여야 할 CSS 잡아두기 (부모영역 잡아두고 그안에서 자식 움직이는 형태 */
-#wrap #header .wrap .container .menu .hoverLineCase .hoverLine {
-    height: 100%;
-    background: rgb(137, 212, 255);
-    position: absolute;
-    transition: 0.5s;
-}
-
 #wrap #header .wrap .container ul li {
     margin: 0 40px 0 40px;
     padding: 2px 0;
@@ -85,6 +67,24 @@
     color: #FFFFFF;
     font-size: 16px;
 }
+
+/* 1. 고정해야 할 css 잡아두기 (부모영역) */
+#wrap #header .wrap .container .menu .hoverLineCase {
+    position: absolute;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+}
+
+
+/* 2. 움직여야 할 CSS 잡아두기 (자식영역) */
+#wrap #header .wrap .container .menu .hoverLineCase .hoverLine {
+    height: 100%;
+    background: rgb(137, 212, 255);
+    position: absolute;
+    transition: 0.5s;
+}
+
 
 /* 2023.02.04 모바일 헤더 메뉴 구현 */
 

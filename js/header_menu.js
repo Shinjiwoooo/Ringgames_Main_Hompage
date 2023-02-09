@@ -26,6 +26,7 @@ const HeaderMenu = {
                 blackChangeBackground.style.background = "#F0F2F2";
                 blackChangeBackground.style.opacity = "0";
                 blackChangeBackground.style.transition = "0.5s";
+                
 
                 // test.forEach((item, idx) => {
                 //     item.style.background = "#F0F2F2";
@@ -33,8 +34,8 @@ const HeaderMenu = {
                 // })
             }
             else {
-                // blackChangeBackground.style.background = "url('/images/change_black_bg.png')";
-                blackChangeBackground.style.background = "#051417";
+                blackChangeBackground.style.background = "url('/images/change_black_bg.png')";
+                // blackChangeBackground.style.background = "#051417";
                 blackChangeBackground.style.opacity = "1";
                 blackChangeBackground.style.transition = "0.5s";
 
@@ -73,7 +74,6 @@ const HeaderMenu = {
         //  절대 하드코딩 금지.
 
         setTimeout(() => {
-            console.log(window.location.pathname.split("/")[window.location.pathname.split("/").length - 1])
             switch(window.location.pathname.split("/")[window.location.pathname.split("/").length - 1]) {
                 case 'index.html' :
                     targetLine.style.width = '42px';
@@ -101,32 +101,31 @@ const HeaderMenu = {
         
     },
 
-    // menuLineCheck : function(currURL) {
-    //     const targetLine = document.querySelector(".hoverLine");
-        
-    //     switch(currURL) {
-    //         case 'index.html' :
-    //             targetLine.style.width = '42px';
-    //             targetLine.style.left = '40px';
-    //         break
-    //         case 'Aboutus.html' :
-    //             targetLine.style.width = '68px';
-    //             targetLine.style.left = '160px';
-    //         break
-    //         case 'News.html' :
-    //             targetLine.style.width = '42px';
-    //             targetLine.style.left = '305px';
-    //         break
-    //         case 'Careers.html' :
-    //             targetLine.style.width = '56px';
-    //             targetLine.style.left = '425px';
-    //         break
-    //         case 'Contact.html' :
-    //             targetLine.style.width = '56px';
-    //             targetLine.style.left = '562px';
-    //         break
-    //     }
-    // },
+    menuLineCheck : function(currURL) {
+        const targetLine = document.querySelector(".hoverLine");
+        switch(currURL) {
+            case 'index.html' :
+                targetLine.style.width = '42px';
+                targetLine.style.left = '40px';
+            break
+            case 'Aboutus.html' :
+                targetLine.style.width = '68px';
+                targetLine.style.left = '160px';
+            break
+            case 'News.html' :
+                targetLine.style.width = '42px';
+                targetLine.style.left = '305px';
+            break
+            case 'Careers.html' :
+                targetLine.style.width = '56px';
+                targetLine.style.left = '425px';
+            break
+            case 'Contact.html' :
+                targetLine.style.width = '56px';
+                targetLine.style.left = '562px';
+            break
+        }
+    },
 
     moveHoverLine : function(e) {
         const targetLine = document.querySelector(".hoverLine");
@@ -158,7 +157,7 @@ const HeaderMenu = {
     // curr -> 현재 내 주소 , currTarget -> pc메뉴 5개가 배열로 들어감.
     currStateCheck : function(curr, currTarget) {
         // 현재 내가 위치해 있는 URL 의 끝 html에 따라서 메뉴에 컬러를 넣어놓는 함수..
-
+        console.log()
         switch(curr) {
             case 'index.html' :
                 currTarget[0].style.color = '#89D4FF';
@@ -178,6 +177,7 @@ const HeaderMenu = {
         }
     },
 
+
     showMobileMenu : function() {
         // 모바일메뉴를 노출시킨다
         const mobileMenuArea = document.querySelector("#m_wrap");
@@ -190,6 +190,7 @@ const HeaderMenu = {
 
         // 처음눌렀을때 mobileMenuArea.style.right 가 0 이거나 -300이면 피고 아니면 접음. 
         if(mobileMenuArea.style.right == "" || mobileMenuArea.style.right == "-300px") {
+            console.log(mobileMenuArea.style.right == "" || mobileMenuArea.style.right == "-300px")
             mobileMenuArea.style.right = '0px';
             mobileMenuArea.style.transition = '1s';
 
@@ -211,6 +212,7 @@ const HeaderMenu = {
             mobileMenuBtnBar01.style.top = '0px';
             mobileMenuBtnBar01.style.transition = '1s';
 
+
             mobileMenuBtnBar02.style.transform = 'rotate(0)';
             mobileMenuBtnBar02.style.position = 'absolute';
             mobileMenuBtnBar02.style.top = '12px';
@@ -219,10 +221,6 @@ const HeaderMenu = {
 
     },
 
-        
 }
 
 HeaderMenu.init();
-
-
-
