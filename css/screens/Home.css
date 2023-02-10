@@ -13,8 +13,9 @@ footer:1 */
     background-color: #F0F2F2;
 }
 
-.g_container {}
+.g_container {
 
+}
 /* 
 .line {
     border-bottom: 2px solid #89D4FF;
@@ -47,17 +48,17 @@ footer:1 */
 }
 
 #wrap #main .wrap .section_wrapper #section_banner {
-    position: relative;
-    top: 0px;
-    left: 0px;
+position: relative;
+top:0px;
+left:0px;
 
 }
 
 #wrap #main .wrap .section_wrapper #section_banner .banner {
     width: 100%;
-    height: 100%;
-}
-
+    height:100%;
+}   
+    
 
 #wrap #main .wrap .section_wrapper #section_banner .banner img {
     width: 100vw;
@@ -84,7 +85,7 @@ footer:1 */
 }
 
 #wrap #main .wrap .section_wrapper #section_banner .content .content_wrap .header {
-
+  
     width: 100%;
 }
 
@@ -143,7 +144,7 @@ footer:1 */
     color: #FFFFFF;
 }
 
-#wrap #main .wrap .section_wrapper .Preview_container {
+#wrap #main .wrap .section_wrapper #section_banner .Preview_container {
     width: 19.583vw;
     z-index: 2;
     display: flex;
@@ -157,20 +158,22 @@ footer:1 */
 }
 
 
-#wrap #main .wrap .section_wrapper .Preview_container .Preview_wrapper {
+#wrap #main .wrap .section_wrapper #section_banner .Preview_container .Preview_wrapper {
     position: relative;
     width: calc(50% - 15px);
 }
 
-#wrap #main .wrap .section_wrapper .Preview_container .Preview_wrapper .Preview {}
+#wrap #main .wrap .section_wrapper #section_banner .Preview_container .Preview_wrapper .Preview {
+ 
+}
 
-#wrap #main .wrap .section_wrapper .Preview_container .Preview_wrapper img {
+#wrap #main .wrap .section_wrapper #section_banner .Preview_container .Preview_wrapper img {
     border-radius: 10px;
-    width: 100%;
+    width:100%;
 
 }
 
-#wrap #main .wrap .section_wrapper .Preview_container .Preview_wrapper .Preview::after {
+#wrap #main .wrap .section_wrapper #section_banner .Preview_container .Preview_wrapper .Preview::after {
     content: "";
     display: block;
     z-index: 3;
@@ -186,10 +189,10 @@ footer:1 */
 }
 
 
-#wrap #main .wrap .section_wrapper .Preview_container .Preview_wrapper .indicator {
+#wrap #main .wrap .section_wrapper #section_banner .Preview_container .Preview_wrapper .indicator {
     position: absolute;
     width: 100%;
-    height: 6px;
+    height: 6px; 
     border-radius: 10px;
     transition: opacity .3s, visibility .3s;
     z-index: 3;
@@ -199,7 +202,7 @@ footer:1 */
     opacity: 0; */
 }
 
-#wrap #main .wrap .section_wrapper .Preview_container .Preview_wrapper .indicator::after {
+ #wrap #main .wrap .section_wrapper #section_banner .Preview_container .Preview_wrapper .indicator::after {
     content: "";
     display: block;
     width: 100%;
@@ -208,18 +211,21 @@ footer:1 */
     border-radius: inherit;
     transform: translateX(-1%);
     /* transform: translateX(100%); */
-}
+} 
 
-#wrap #main .wrap .section_wrapper .scroll_container {
-    width: 103px;
-    height: 43px;
+#wrap #main .wrap .section_wrapper #section_banner .scroll_container {
+    width:103px;
+    height:43px;
     background: url("/images/scroll.png") no-repeat 50% 50%;
     position: absolute;
 }
 
-#wrap #main .wrap .section_wrapper .scroll_container .mouse {}
+#wrap #main .wrap .section_wrapper #section_banner .scroll_container .mouse {
 
-#wrap #main .wrap .section_wrapper .scroll_container .mouse .line {}
+}
+
+#wrap #main .wrap .section_wrapper #section_banner .scroll_container .mouse .line {
+}
 
 #wrap #main .wrap .section_wrapper #section_product {
     width: 100%;
@@ -227,7 +233,7 @@ footer:1 */
 }
 
 #wrap #main .wrap .section_wrapper #section_product .container_wrap {
-    width: 79.167vw;
+    width:79.167vw;
     margin: 0 auto;
     /* background-color:pink; */
 
@@ -253,9 +259,9 @@ footer:1 */
     /* background-color: yellow; */
 }
 
-#wrap #main .wrap .section_wrapper #section_product .container_wrap .content_wrap .container img {
-    border-radius: 20px;
-    width: 100%;
+#wrap #main .wrap .section_wrapper #section_product .container_wrap .content_wrap .container img{
+    border-radius:20px;
+    width:100%;
 }
 
 #wrap #main .wrap .section_wrapper #section_product .container_wrap .content_wrap .container .container_footer {
@@ -303,3 +309,6 @@ footer:1 */
     letter-spacing: -0.02em;
     color: #6C6C6C;
 }
+
+
+

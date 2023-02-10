@@ -70,7 +70,10 @@ footer:1 */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: #fff; */
+}
+
+#wrap #main .wrap .section_wrapper #section_career .banner .title_container .title  {
+
 }
 
 #wrap #main .wrap .section_wrapper #section_career .banner .title_container .title p {
@@ -82,14 +85,21 @@ footer:1 */
     margin: 0 0 17px 0;
 }
 
+#wrap #main .wrap .section_wrapper #section_career .banner .title_container  a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
 
+/* 여기서부터 */
 #wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_pc {
     width: 90px;
     height: 90px;
     position: relative;
 }
 
-#wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_mobile_2 {
+#wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_hover {
     position: absolute;
     width: 314px;
     height: 90px;
@@ -97,7 +107,7 @@ footer:1 */
     transition: 0.1s;
 }
 
-#wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_mobile_2 p {
+#wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_hover p {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -112,17 +122,11 @@ footer:1 */
     color: #FFFFFF;
 }
 
-#wrap #main .wrap .section_wrapper #section_career .banner .title_container  a {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-}
 
-#wrap #main .wrap .section_wrapper #section_career .banner .title_container  a:hover .btn_mobile_2 {
+#wrap #main .wrap .section_wrapper #section_career .banner .title_container  a:hover .btn_hover {
     opacity: 1;
 }
-
+/* 여기까지 */
 #wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_mobile {
     display: none;
 }
@@ -208,13 +212,12 @@ footer:1 */
     padding: 75px 0 75px 0;
 }
 
-#wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul .tal {
+#wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul .border_line {
     border-top: none;
     height: 158px;
 }
 
-#wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul .tal .bold {
-    /* font-family: 'Pretendard'; */
+#wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul .border_line .bold {
     font-style: normal;
     font-weight: 700;
     font-size: 80px;
@@ -320,7 +323,6 @@ footer:1 */
     letter-spacing: -0.02em;
     color: #000000;
     text-align: center;
-
 }
 
 
