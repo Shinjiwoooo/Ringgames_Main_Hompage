@@ -18,7 +18,7 @@ footer:1 */
     z-index: 1;
     display: block;
     width: 100%;
- 
+    overflow-x: hidden;
 }
 
 #wrap #main .wrap {
