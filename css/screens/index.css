@@ -526,10 +526,10 @@ footer:1 */
 
 #wrap #main .wrap .section_wrapper_1 #section_menu .menu_wrapper ul li {
     width: 100%;
-    height: 132px;
     border-bottom: 1px solid #6C6C6C;
     display: flex;
     align-items: center;
+    padding:2rem 0 ;
 }
 
 #wrap #main .wrap .section_wrapper_1 #section_menu .menu_wrapper ul li a {

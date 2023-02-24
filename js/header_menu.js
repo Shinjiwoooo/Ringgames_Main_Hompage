@@ -1,6 +1,7 @@
 const HeaderMenu = {
     init:function(){
         this.pcMenuFunc();
+        this.mobileMenuFunc();
     },
 
     pcMenuFunc : function() {
@@ -19,7 +20,7 @@ const HeaderMenu = {
 
         window.addEventListener('scroll', () => {
             let scrollLocation = document.documentElement.scrollTop;
-            // console.log(document.documentElement.scrollTop)
+            console.log(document.documentElement.scrollTop)
             if (scrollLocation <= 1400) {
                 blackChangeBackground.style.background = "#F0F2F2";
                 // blackChangeBackground.style.opacity = "0";
@@ -32,7 +33,7 @@ const HeaderMenu = {
                 // })
             }
             else {
-                blackChangeBackground.style.background = "url('/images/change_black_bg.png')";
+                // blackChangeBackground.style.background = "url('/images/change_black_bg.png')";
                 blackChangeBackground.style.background = "#051417";
                 // blackChangeBackground.style.opacity = "1";
                 blackChangeBackground.style.transition = "0.8s";
@@ -42,6 +43,7 @@ const HeaderMenu = {
                 //     item.style.transition = "0.5s";
                 // })
             }
+
         })
     },
 
@@ -78,6 +80,7 @@ const HeaderMenu = {
         
     },
 
+
     menuLineCheck : function(currURL) {
         const targetLine = document.querySelector(".hoverLine");
         switch(currURL) {
@@ -103,6 +106,19 @@ const HeaderMenu = {
             break
         }
     },
+
+
+    mobileMenuFunc : function() {
+        
+        const mobileMenuBtn = document.querySelector(".m_menu");
+        const innerMobileMenu = document.querySelectorAll(".containerMenu li a");
+        
+        mobileMenuBtn.addEventListener('click', this.showMobileMenu);
+
+        this.currStateCheck(window.location.pathname.split("/")[window.location.pathname.split("/").length - 1], innerMobileMenu);
+
+    },
+
 
     moveHoverLine : function(e) {
         const targetLine = document.querySelector(".hoverLine");
@@ -131,6 +147,7 @@ const HeaderMenu = {
         
     },
 
+
     currStateCheck : function(curr, currTarget) {
 
         switch(curr) {
@@ -150,6 +167,47 @@ const HeaderMenu = {
                 currTarget[4].style.color = '#89D4FF';
             break
         }
+    },
+
+    
+    showMobileMenu : function() {
+    
+        const mobileMenuArea = document.querySelector("#m_wrap");
+
+            const mobileMenuBtnBar01 = document.querySelector(".bar_01");
+            const mobileMenuBtnBar02 = document.querySelector(".bar_02");
+
+            
+        if(mobileMenuArea.style.right == "" || mobileMenuArea.style.right == "-300px") {
+            console.log(mobileMenuArea.style.right == "" || mobileMenuArea.style.right == "-300px")
+            mobileMenuArea.style.right = '0px';
+            mobileMenuArea.style.transition = '1s';
+
+            mobileMenuBtnBar01.style.transform = 'rotate(45deg)';
+            mobileMenuBtnBar01.style.position = 'absolute';
+            mobileMenuBtnBar01.style.top = '6px';
+            mobileMenuBtnBar01.style.transition = '1s';
+
+            mobileMenuBtnBar02.style.transform = 'rotate(-45deg)';
+            mobileMenuBtnBar02.style.position = 'absolute';
+            mobileMenuBtnBar02.style.top = '6px';
+            mobileMenuBtnBar02.style.transition = '1s';
+        } else {
+            mobileMenuArea.style.right = '-300px';
+            mobileMenuArea.style.transition = '1s';
+            
+            mobileMenuBtnBar01.style.transform = 'rotate(0)';
+            mobileMenuBtnBar01.style.position = 'absolute';
+            mobileMenuBtnBar01.style.top = '0px';
+            mobileMenuBtnBar01.style.transition = '1s';
+
+
+            mobileMenuBtnBar02.style.transform = 'rotate(0)';
+            mobileMenuBtnBar02.style.position = 'absolute';
+            mobileMenuBtnBar02.style.top = '12px';
+            mobileMenuBtnBar02.style.transition = '1s';
+        }
+
     },
 
 

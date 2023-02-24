@@ -90,6 +90,7 @@ footer:1 */
     align-items: center;
     flex-direction: column;
     position: relative;
+    /* background-color: yellow; */
 }
 
 /* 여기서부터 */
@@ -210,6 +211,7 @@ footer:1 */
     align-items: center;
     justify-content: center;
     padding: 75px 0 75px 0;
+
 }
 
 #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul .border_line {
@@ -293,10 +295,10 @@ footer:1 */
     width: calc(100% / 4 - 20px);
     margin-right: 20px;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 /* 2023.01.24 width 를 고정으로 25% 주면 더이상 공간이 없어서 공백을 줄 수 없음
     따라서 calc로 100% 를 4로 나누고 20px 만큼 공백을 만들어서 margin-right 사용함 calc의 사용법은 써있는대로 나눌수 있고 마지막 마이너스는 저만큼 공백을 남기겠다는거임.
-    이해가 안가면 구글링
 */
 #wrap #main .wrap .section_wrapper #section_content ul li img {
     margin: 0 0 2.5em 0;
@@ -306,6 +308,7 @@ footer:1 */
     background-image: url(/images/benefit_icon/middle_line.png);
     width: 325px;
     height:20px;
+    margin-bottom: 1.5em;
 }
 
 #wrap #main .wrap .section_wrapper #section_content ul li .text_box{
@@ -314,6 +317,7 @@ footer:1 */
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 1.5em;
 }
 
 
@@ -323,6 +327,7 @@ footer:1 */
     letter-spacing: -0.02em;
     color: #000000;
     text-align: center;
+
 }
 
 
