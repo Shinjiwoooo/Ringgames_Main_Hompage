@@ -191,8 +191,8 @@ footer:1 */
 
 #wrap #main .wrap .section_wrapper #section_we {
     width: 100%;
-    padding: 0 0 140px 0;
-    height: 942px;
+    /* padding: 0 0 140px 0;
+    height: 942px; */
 }
 
 #wrap #main .wrap .section_wrapper #section_we .menu_wrapper {
@@ -224,6 +224,7 @@ footer:1 */
     font-weight: 700;
     font-size: 80px;
     color: #000000;
+    margin-bottom: 70px;
 }
 
 #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul li a {
@@ -273,6 +274,7 @@ footer:1 */
 #wrap #main .wrap .section_wrapper #section_content {
     width: 100%;
     Padding-top: 100px;
+    padding-bottom: 75px;
 }
 
 #wrap #main .wrap .section_wrapper #section_content ul {

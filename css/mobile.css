@@ -209,7 +209,7 @@
     /* about us */
 
     #wrap #main .wrap .section_wrapper #section_goal {
-        height: 800px;
+        height:100vh;
 
     }
 
@@ -229,18 +229,19 @@
 
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap .introduce .title h2 {
-        font-size: 24px;
-        margin: 0 0 6px 0;
+        font-size: 2.344vw;
+        /* margin: 0 0 6px 0; */
     }
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap .introduce .detail h2 {
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 1.758vw;
+        line-height: 2.734vw;
     }
 
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap .goal {
-        top: 160px;
+        /* top: 160px; */
+        top: 16vw;
     }
 
     /* News */
@@ -249,7 +250,7 @@
         position: relative;
         top: 0px;
         left: 0px;
-        height: 559px;
+        /* height: 559px; */
     }
 
     #wrap #main .wrap .section_wrapper #section_news .container_wrap {
@@ -315,8 +316,8 @@
     }
 
     .swiper-button-next {
-        width: 12px !important;
-        height: 20px !important;
+        width: 12px;
+        height: 20px;
         background: url(/images/btn_arrow.png) no-repeat;
         background-repeat: no-repeat;
         background-size: cover;
@@ -324,8 +325,8 @@
     }
 
     .swiper-button-prev {
-        width: 12px !important;
-        height: 20px !important;
+        width: 12px;
+        height: 20px;
         background: url(/images/btn_arrow.png) no-repeat;
         background-repeat: no-repeat;
         background-size: cover;
@@ -333,7 +334,7 @@
 
     .pagination {
         position: absolute;
-        top: -10px;
+        /* top: -10px; */
         /* background-color: rgb(144, 124, 255); */
     }
 
@@ -405,9 +406,9 @@
 
     #wrap #main .wrap .section_wrapper #section_career .banner .title_container .title p {
         font-size: 30px;
-        margin: 0px 0px 17px;
+        margin: 0px 0px 11px;
     }
-
+    
 
     /* section_we */
     #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul .border_line .bold {
@@ -419,8 +420,8 @@
 
     #wrap #main .wrap .section_wrapper #section_we {
         width: 100%;
-        height:574px;
-        padding: 0px 0px 40px;
+        /* height:574px; */
+        /* padding: 0px 0px 40px; */
     }
 
     #wrap #main .wrap .section_wrapper #section_we .menu_wrapper {
@@ -429,15 +430,22 @@
     }
 
     #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul {
-        padding: 59px 0 40px 0;
+        /* padding: 59px 0 40px 0; */
+        padding: 60px 0 35px 0;
     }
 
     #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul li {
         width: 100%;
-        /* height: 99px; */
         padding: 35px 0 35px 0;
     }
 
+
+    #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul .border_line {
+        border-top: none;
+        height: 84px;
+    }
+
+    
     #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul .tal {
         border-top: none;
         height: 75px;
@@ -449,6 +457,7 @@
         letter-spacing: -0.02em;
         padding-bottom: 29px;
     }
+    
 
     #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul li a {
         font-size: 40px;
@@ -457,6 +466,10 @@
         letter-spacing: -0.02em;
     }
 
+    #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul .border_line .bold {
+
+        margin-bottom: 29px;
+    }
     
     #wrap #main .wrap .section_wrapper #section_welfare .banner .title p {
         font-family: 'Pretendard';
@@ -573,7 +586,7 @@
     }
 
     #wrap #main .wrap .section_wrapper #section_contact .container_wrap .container_contact .location {
-        margin: 0 164px 0 0;
+        /* margin: 0 164px 0 0; */
     }
 
 
@@ -842,7 +855,7 @@
     /*section_goal */
 
     #wrap #main .wrap .section_wrapper #section_goal {
-        height: 930px;
+        /* height: 930px; */
     }
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap {
@@ -866,10 +879,13 @@
     }
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap .goal {
-        width: 307px;
+        /* width: 307px;
         top: 100px;
         transform: none;
-        left: 12px;
+        left: 12px; */
+        top: 20vw;
+        transform: none;
+        left: 2vw;
     }
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap .goal h2 {
@@ -976,6 +992,7 @@
 
     #wrap #main .wrap .section_wrapper #section_contact .container_wrap .container_contact {
         flex-direction: column-reverse;
+        height: auto;
     }
 
     #wrap #main .wrap .section_wrapper #section_contact .container_wrap .container_contact iframe {
@@ -1037,6 +1054,10 @@
 
     /* section_content*/
 
+    #wrap #main .wrap .section_wrapper #section_content  {
+        padding-top: 60px;
+    }
+
     #wrap #main .wrap .section_wrapper #section_content ul {
         width: 82.703vw;
     }
@@ -1077,25 +1098,32 @@
         padding: 70px 0 50px 0;
     }
 
+
+
     #wrap #main .wrap .section_wrapper #section_we {
         width: 100%;
-        height: 827px;
-        padding: 0px 0px 0px;
     }
 
     #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul li {
         width: 100%;
-        height: 200px;
+        padding:58px 0 58px 0;
     }
 
-    #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul .tal {
-        height: 107px;
-    }
 
     #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul li a {
         font-size: 4.324vw;
         line-height: 42px;
         text-align: center;
+    }
+
+    #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul .border_line {
+        border-top: none;
+        height: 107px;
+    }
+
+    #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul .border_line .bold {
+        font-size: 7.027vw;
+        margin-bottom: 55px;
     }
 
     #wrap #main .wrap .section_wrapper #section_we .menu_wrapper {
@@ -1135,8 +1163,8 @@
 
     #wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_mobile {
         display: block;
-        width: 314px;
-        height: 90px;
+        width: 42.432vw;
+        /* height: 90px; */
         position: relative;
         cursor: pointer;
     }
@@ -1147,12 +1175,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         font-weight: 700;
-        font-size: 36px;
-        line-height: 43px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        letter-spacing: -0.02em;
+        font-size: 4.865vw;
         color: #FFFFFF;
     }
 
@@ -1189,10 +1212,7 @@
         font-family: 'Pretendard';
         font-style: normal;
         font-weight: 500;
-        font-size: 28px;
-        line-height: 38px;
-        /* or 136% */
-        
+        font-size: 3.784vw;
         display: flex;
         align-items: center;
         text-align: center;

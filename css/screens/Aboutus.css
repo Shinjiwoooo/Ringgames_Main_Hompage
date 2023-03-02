@@ -51,7 +51,7 @@ footer:1 */
 #wrap #main .wrap .section_wrapper #section_goal .container_wrap .container_about {}
 
 
-#wrap #main .wrap .section_wrapper #section_goal .container_wrap .title {
+#wrap #main .wrap .section_wrapper #section_goal .container_wrap .container_about .title {
     width: 100%;
     margin: 0 0 28px 0;
 }
@@ -78,7 +78,8 @@ footer:1 */
     width: 79.271vw;
     margin: 0 auto;
     position: absolute;
-    top: 240px;
+    /* top: 240px; */
+    top: 13vw;
     transform: translate(-50%);
     left: 50%;
     z-index: 2;
@@ -116,9 +117,10 @@ footer:1 */
 #wrap #main .wrap .section_wrapper #section_goal .container_wrap .introduce .title h2 {
     font-weight: 500;
     font-size: 36px;
-    line-height: 43px;
+    line-height: 2.240vw;
     color: #000000;
-    margin: 0 0 19px 0;
+    margin: 0 0 0.99vw 0;
+
 }
 
 #wrap #main .wrap .section_wrapper #section_goal .container_wrap .introduce .detail {

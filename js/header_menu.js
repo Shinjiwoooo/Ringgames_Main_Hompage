@@ -8,6 +8,9 @@ const HeaderMenu = {
         const pcMenu = document.querySelectorAll(".menu li a");
         const blackChangeBackground = document.querySelector(".blackBg");
 
+  
+
+
         for(let i = 0; i < pcMenu.length; i++){
             pcMenu[i].addEventListener("mouseenter", this.moveHoverLine);
             pcMenu[i].addEventListener("mouseleave", this.resetHoverLine);
@@ -15,28 +18,47 @@ const HeaderMenu = {
 
         this.menuLineCheck(window.location.pathname.split("/")[window.location.pathname.split("/").length - 1]);
         this.currStateCheck(window.location.pathname.split("/")[window.location.pathname.split("/").length - 1], pcMenu);
-
-
-
+        
+        
         window.addEventListener('scroll', () => {
             let scrollLocation = document.documentElement.scrollTop;
+            let widthSize = window.innerWidth;
             console.log(document.documentElement.scrollTop)
-            if (scrollLocation <= 1400) {
-                blackChangeBackground.style.background = "#F0F2F2";
-                // blackChangeBackground.style.opacity = "0";
+            console.log( window.innerWidth)
+            
+            if (scrollLocation <= 1400 && widthSize > 1024 ){
+                blackChangeBackground.style.background = "#F0F2F2";     
                 blackChangeBackground.style.transition = "0.8s";
-                
-
+                 // blackChangeBackground.style.opacity = "0";
                 // test.forEach((item, idx) => {
                 //     item.style.background = "#F0F2F2";
                 //     item.style.transition = "0.5s";
                 // })
             }
-            else {
-                // blackChangeBackground.style.background = "url('/images/change_black_bg.png')";
-                blackChangeBackground.style.background = "#051417";
-                // blackChangeBackground.style.opacity = "1";
+            else if( scrollLocation <= 1020  && widthSize > 400){
+                blackChangeBackground.style.background = "#F0F2F2";     
                 blackChangeBackground.style.transition = "0.8s";
+                 // blackChangeBackground.style.opacity = "0";
+                // test.forEach((item, idx) => {
+                //     item.style.background = "#F0F2F2";
+                //     item.style.transition = "0.5s";
+                // })
+            }
+            else if( scrollLocation <= 758  && widthSize > 300){
+                blackChangeBackground.style.background = "#F0F2F2";     
+                blackChangeBackground.style.transition = "0.8s";
+                 // blackChangeBackground.style.opacity = "0";
+                // test.forEach((item, idx) => {
+                //     item.style.background = "#F0F2F2";
+                //     item.style.transition = "0.5s";
+                // })
+            }
+            else  {
+                blackChangeBackground.style.background = "#051417";
+                blackChangeBackground.style.transition = "0.8s";
+                
+                // blackChangeBackground.style.background = "url('/images/change_black_bg.png')";
+                  // blackChangeBackground.style.opacity = "1";
 
                 // test.forEach((item, idx) => {
                 //     item.style.background = "#051417";
