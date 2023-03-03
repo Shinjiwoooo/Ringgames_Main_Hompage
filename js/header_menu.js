@@ -23,8 +23,8 @@ const HeaderMenu = {
         window.addEventListener('scroll', () => {
             let scrollLocation = document.documentElement.scrollTop;
             let widthSize = window.innerWidth;
-            console.log(document.documentElement.scrollTop)
-            console.log( window.innerWidth)
+            // console.log(document.documentElement.scrollTop)
+            // console.log( window.innerWidth)
             
             if (scrollLocation <= 1400 && widthSize > 1024 ){
                 blackChangeBackground.style.background = "#F0F2F2";     
