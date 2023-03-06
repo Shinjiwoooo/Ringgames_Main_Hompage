@@ -109,7 +109,6 @@
 
     #wrap #main .wrap .section_wrapper_1 #section_product .container_wrap {
         width: 90.234vw;
-        margin: 0 auto;
     
     }
 
@@ -224,6 +223,7 @@
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap .title_wrapper h1 {
         font-size: 26px;
+        width: 88%;
     }
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap .introduce {
@@ -234,7 +234,7 @@
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap .introduce .title h2 {
         font-size: 2.344vw;
-        /* margin: 0 0 6px 0; */
+        margin: 0 0 1.5vw 0;
     }
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap .introduce .detail h2 {
@@ -655,7 +655,7 @@
 
     #wrap #main .wrap .section_wrapper #section_banner #mobileCSS {
         top: auto;
-        bottom: 12%;
+        bottom: 15%;
         left: 16px;
     }
     #wrap #main .wrap .section_wrapper #section_banner #mobileCSS_1 {
@@ -700,7 +700,6 @@
     /*section_product */
 
     #wrap #main .wrap .section_wrapper_1 #section_product .container_wrap {
-        margin: 0 auto;
         width: calc(100% - 32px);
     }
 
@@ -906,13 +905,13 @@
     }
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap .introduce .title h2 {
-        font-size: 36px;
+        font-size: 4.865vw;
+        margin: 0 0 2vw 0;
     }
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap .introduce .detail h2 {
-        font-size: 24px;
-        line-height: 34px;
-        /* letter-spacing: -0.02em; */
+        font-size: 3.243vw;
+        line-height: 5vw;
     }
 
     /*section_news*/
