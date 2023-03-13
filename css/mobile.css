@@ -208,7 +208,7 @@
     /* about us */
 
     #wrap #main .wrap .section_wrapper #section_goal {
-        height:100vh;
+        height: 757px;
 
     }
 
@@ -272,7 +272,9 @@
         height: 20px;
         margin-bottom: 18px;
         line-height: 20px;
+        font-size: 1.172vw;
     }
+    
 
     #wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list li a img {
         width: 28.906vw;
@@ -440,7 +442,7 @@
 
     #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul li {
         width: 100%;
-        padding: 35px 0 35px 0;
+        padding: 4vw 0 4vw 0;
     }
 
 
@@ -493,7 +495,7 @@
     }
 
     #wrap #main .wrap .section_wrapper #section_content ul li {
-        padding: 46px 0 0 0;
+        padding: 5vw 0 0 0;
         width: calc(100% / 3 - 20px);
         margin-right: 20px;
         /* 2023.01.24 width 를 고정으로 33% 주면 더이상 공간이 없어서 공백을 줄 수 없음
@@ -503,7 +505,8 @@
 
 
     #wrap #main .wrap .section_wrapper #section_content ul li img {
-        margin: 0 0 42px 0;
+        margin: 0 0 4vw 0;
+        width: 20%;
     }
 
     /* #wrap #main .wrap .section_wrapper #section_content ul li p {
@@ -515,9 +518,9 @@
 
     #wrap #main .wrap .section_wrapper #section_content ul li .middle_line {
         background-image: url(/images/benefit_icon/middle_line.png);
-        width: 325px;
-        height:20px;
-        margin-bottom: 1.5em;
+        width: 35.946vw;
+        height: 2.162vw;
+        margin-bottom: 3vw;
     }
     
     #wrap #main .wrap .section_wrapper #section_content ul li .text_box{
@@ -526,14 +529,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 1.5em;
+        margin-bottom: 2vw;
     }
     
     #wrap #main .wrap .section_wrapper #section_content ul li .text_box p {
         font-family: 'Pretendard';
         font-style: normal;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 1.953vw;
     }
     
     /* contact*/
@@ -600,15 +603,17 @@
 
     /* header */
     #wrap #header {
-        height: 80px;
+        height: 14vw;
+        padding: 0 2.162vw 0 2.162vw;
     }
 
     #wrap #header .m_menu {
-        width: 40px;
+        width: 6.405vw;
     }
 
     #wrap #header .wrap>a img {
-        width: 230px;
+        width:31.081vw;
+        height:4.535vw;
     }
 
     .home .swiper-horizontal>.swiper-pagination-bullets, .home .swiper-pagination-bullets.swiper-pagination-horizontal {
@@ -729,7 +734,7 @@
     #wrap #main .wrap .section_wrapper_1 #section_product .container_wrap .content_wrap .container .container_footer_cover h2 {
         font-weight: 600;
         font-size: 3.955vw;
-        line-height: 33px;
+        /* line-height: 33px; */
         color: #FFFFFF;
         margin: 0 0 0.2em 0;
     }
@@ -858,7 +863,7 @@
     /*section_goal */
 
     #wrap #main .wrap .section_wrapper #section_goal {
-        /* height: 930px; */
+        height: 930px;
     }
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap {
@@ -918,11 +923,12 @@
 
     #wrap #main .wrap .section_wrapper #section_news .container_wrap {
         width: 95%;
-        margin-top: 122px;
+        margin-top: 16.486vw;
     }
 
     #wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list {
         display: block;
+        border-bottom: none;
     }
 
     #wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list li {
@@ -931,59 +937,71 @@
         display: block;
         margin: 0px 0px 0px 0px;
     }
+    #wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list li:last-child {
+        margin-bottom: 13.514vw;
+    }
 
     #wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list li a {
-        padding: 30px 0 30px 0;
+        padding: 4.054vw 0px 0px 0px;
     }
 
     #wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list li a img {
         width: 100vw;
         object-fit: cover;
-        margin-bottom: 12px;
+        margin-bottom: 1.622vw;
         position: relative;
         z-index: 1;
     }
 
     #wrap #main .wrap .section_wrapper #section_news .container_wrap h2 {
         font-weight: 700;
-        font-size: 36px;
+        font-size: 4.865vw;
+        margin-bottom: 1.486vw;
     }
 
     #wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list li a>span {
         position: absolute;
         z-index: 2;
         margin: 2% 0 0 2%;
-
+        font-size: 2.162vw;
+        margin-bottom: 18px;
+        width: 13.784vw;
+        height: 3.514vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     #wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list li a>p {
-        font-size: 24px;
-        line-height: 34px;
+        font-size: 3.243vw;
+        line-height:4.595vw;
 
 
     }
 
     #wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list li a h1 .category {
-        margin: 0 10px 0 0;
-        font-size: 24px;
+        margin: 0 1.351vw 0 0;
+        font-size: 3.243vw;
     }
 
     #wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list li a h1 .bar {
         display: inline-block;
         position: absolute;
-        width: 1px;
-        height: 20px;
+        width: 0.27vw;
+        height: 2.432vw;
         background: #929292;
-        top: 4px;
     }
 
     #wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list li a h1 .day {
         margin: 0 0 0 11px;
-        font-size: 20px;
+        font-size: 2.703vw;
+        margin: 0 0 0 1.486vw;
+        top:0.541vw;
     }
 
     #wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list li a h1 {
-        margin: 0 0 13px 0;
+        margin: 0 0 1.757vw 0;
+        
     }
 
     #wrap #main .wrap .section_wrapper #section_news .container_wrap .pagination_wrap {
@@ -1000,17 +1018,17 @@
 
     #wrap #main .wrap .section_wrapper #section_contact .container_wrap .container_contact iframe {
         width: 100%;
+        height: 43.243vw;
     }
 
     #wrap #main .wrap .section_wrapper #section_contact .container_wrap {
         width: 100%;
-        margin-top: 122px;
+        margin-top: 16.486vw;
     }
 
     #wrap #main .wrap .section_wrapper #section_contact .container_wrap>h2 {
-        margin-bottom: 11px;
-        font-size: 36px;
-        line-height: 43px;
+        margin-bottom: 1.486vw;
+        font-size: 4.865vw;
         letter-spacing: -0.02em;
     }
 
@@ -1019,39 +1037,46 @@
         margin: 47px 0 0 0;
     }
 
+    #wrap #main .wrap .section_wrapper #section_contact .container_wrap .container_contact .location p:first-of-type {
+        font-weight: 500;
+        font-size: 2.162vw;
+        /* line-height: 17px; */
+        letter-spacing: 0.04em;
+    }
+
     #wrap #main .wrap .section_wrapper #section_contact .container_wrap .container_contact .location h2 {
 
-        margin: 0 0 35px 0;
+        margin: 0 0 4.73vw 0;
         font-weight: 500;
-        font-size: 28px;
+        font-size: 3.784vw;
         line-height: 33px;
     }
 
     #wrap #main .wrap .section_wrapper #section_contact .container_wrap .container_contact .location p:nth-of-type(2) {
-        margin-bottom: 33px;
-        font-size: 24px;
-        line-height: 34px;
+        margin-bottom: 4.595vw;
+        font-size: 3.243vw;
+        line-height: 4.595vw;
     }
 
     #wrap #main .wrap .section_wrapper #section_contact .container_wrap .container_contact .location {
-        padding: 0 0 0 16px;
-        margin: 47px 0 0 0;
-        width: 447px;
+        padding: 0 0 0 2.162vw;
+        margin: 6.351vw 0 0 0;
+        width: 60.405vw;
+     
     }
 
     #wrap #main .wrap .section_wrapper #section_contact {
-        height: 886px;
+        /* height: 810px; */
+        height:100vh;
     }
 
     #wrap #main .wrap .section_wrapper #section_contact .container_wrap .container_contact .location .line_3 {
-        margin-bottom: 28px;
+        margin-bottom: 3.784vw;
     }
 
     #wrap #main .wrap .section_wrapper #section_contact .container_wrap .container_contact .location p:last-of-type {
-        font-size: 14px;
-        line-height: 24px;
-        font-size: 24px;
-        line-height: 34px;
+        font-size: 3.243vw;
+        line-height: 4.595vw;
     }
 
 
@@ -1067,12 +1092,12 @@
 
     #wrap #main .wrap .section_wrapper #section_content ul li {
         background: #FFFFFF;
-        padding: 46px 0 0 0;
+        padding: 6vw 0 0 0;
         width: calc(100% / 2 - 20px);
     }
 
     #wrap #main .wrap .section_wrapper #section_content ul li img {
-        margin: 0 0 37px 0;
+        margin: 0 0 5vw 0;
     }
 
     #wrap #main .wrap .section_wrapper #section_content ul li p {
@@ -1082,6 +1107,9 @@
         text-align: center;
     }
 
+    #wrap #main .wrap .section_wrapper #section_content ul li .text_box {
+        margin-bottom: 3vw;
+    }
 
     #wrap #main .wrap .section_wrapper #section_content ul li .circle {
         top: 60%;
@@ -1109,13 +1137,13 @@
 
     #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul li {
         width: 100%;
-        padding:58px 0 58px 0;
+        padding: 6vw 0 6vw 0;
     }
 
 
     #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul li a {
         font-size: 4.324vw;
-        line-height: 42px;
+        line-height: 5.676vw;
         text-align: center;
     }
 
@@ -1220,7 +1248,7 @@
         align-items: center;
         text-align: center;
         letter-spacing: -0.02em;
-        
+        line-height: 5.135vw;
         color: #000000;
   }
 

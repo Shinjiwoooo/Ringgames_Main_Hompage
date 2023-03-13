@@ -19,6 +19,7 @@ footer:1 */
     display: block;
     width: 100%;
     overflow-x: hidden;
+    background: #F0F2F2;
 }
 
 #wrap #main .wrap {

@@ -206,7 +206,7 @@ footer:1 */
 
 #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul li {
     width: 100%;
-    border-top: 1px solid #6C6C6C;
+    border-top: 1px solid #DBDBDB;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -289,7 +289,8 @@ footer:1 */
 
 #wrap #main .wrap .section_wrapper #section_content ul li {
     background: #FFFFFF;
-    padding: 54px 0 0 0;
+    /* padding: 54px 0 0 0; */
+    padding: 3vw 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -303,14 +304,17 @@ footer:1 */
     따라서 calc로 100% 를 4로 나누고 20px 만큼 공백을 만들어서 margin-right 사용함 calc의 사용법은 써있는대로 나눌수 있고 마지막 마이너스는 저만큼 공백을 남기겠다는거임.
 */
 #wrap #main .wrap .section_wrapper #section_content ul li img {
-    margin: 0 0 2.5em 0;
+    /* margin: 0 0 2.5em 0; */
+    margin: 0 0 3vw 0;
 }
 
 #wrap #main .wrap .section_wrapper #section_content ul li .middle_line {
     background-image: url(/images/benefit_icon/middle_line.png);
-    width: 325px;
-    height:20px;
-    margin-bottom: 1.5em;
+    width: 16.927vw;
+    height: 1.042vw;
+    margin-bottom: 1.5vw;
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 
 #wrap #main .wrap .section_wrapper #section_content ul li .text_box{
@@ -319,7 +323,8 @@ footer:1 */
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.5em;
+    /* margin-bottom: 1.5em; */
+    margin-bottom: 2vw;
 }
 
 
