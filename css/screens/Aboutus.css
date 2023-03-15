@@ -66,8 +66,9 @@ footer:1 */
 
 #wrap #main .wrap .section_wrapper #section_goal .container_wrap .banner {
     position: relative;
-    z-index: 1;
 }
+
+
 
 #wrap #main .wrap .section_wrapper #section_goal .container_wrap .banner img {
     width: 100%;

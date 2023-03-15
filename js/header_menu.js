@@ -17,7 +17,7 @@ const HeaderMenu = {
         this.currStateCheck(window.location.pathname.split("/")[window.location.pathname.split("/").length - 1], pcMenu);
 
 
-
+        
         window.addEventListener('scroll', () => {
             let scrollLocation = document.documentElement.scrollTop;
             let widthSize = window.innerWidth ;
@@ -46,6 +46,18 @@ const HeaderMenu = {
             }
 
         })
+
+
+        // window.addEventListener('resize', function(){
+        //     const img = document.querySelector(".container_about .banner #pc")
+        //     console.log(img)
+        //     const widthSize = window.innerWidth ;
+        //     if(widthSize > 740){
+        //         img.src = 'about_us_banner.jpg'
+        //     }else{
+        //         img.src ='about_us_banner_mb.jpg'
+        //     }
+        // });
     },
 
 
@@ -76,7 +88,7 @@ const HeaderMenu = {
                     targetLine.style.left = '562px';
                 break
             }
-        }, 1000)
+        }, 100)
 
         
     },
