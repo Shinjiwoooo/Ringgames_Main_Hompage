@@ -50,14 +50,20 @@ const HeaderMenu = {
 
         // window.addEventListener('resize', function(){
         //     const img = document.querySelector(".container_about .banner #pc")
-        //     console.log(img)
         //     const widthSize = window.innerWidth ;
-        //     if(widthSize > 740){
-        //         img.src = 'about_us_banner.jpg'
+        //     if(widthSize >= 740){
+        //         img.src = './images/about_us_banner.jpg'
         //     }else{
-        //         img.src ='about_us_banner_mb.jpg'
+        //         img.src ='./images/about_us_banner_mb.jpg'
         //     }
         // });
+
+        
+        document.documentElement.addEventListener('touchstart', function (event) { 
+            if (event.touches.length > 1) { 
+                event.preventDefault(); 
+            }
+        }, false);
     },
 
 

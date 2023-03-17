@@ -80,8 +80,6 @@
     }
 
     #wrap #main .wrap .section_wrapper #section_banner #mobileCSS {
-        top: auto;
-        bottom: 25%;
         left: 5%;
     }
 
@@ -208,12 +206,13 @@
     /* about us */
 
     #wrap #main .wrap .section_wrapper #section_goal {
-        height: 757px;
+      height:100vh;
 
     }
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap {
         top: 91px;
+        top: 8.887vw;
         /* height: 587px; */
     }
 
@@ -227,8 +226,9 @@
     }
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap .introduce {
-        margin-top: 45px;
         width: 90%;
+        margin-top: 2.93vw;
+        margin-bottom: 7.715vw;
     }
 
 
@@ -254,7 +254,8 @@
         position: relative;
         top: 0px;
         left: 0px;
-        /* height: 559px; */
+        height: 100vh;
+    
     }
 
     #wrap #main .wrap .section_wrapper #section_news .container_wrap {
@@ -537,13 +538,14 @@
         font-style: normal;
         font-weight: 500;
         font-size: 1.953vw;
+        line-height: 2.930vw;
     }
     
     /* contact*/
 
 
     #wrap #main .wrap .section_wrapper #section_contact {
-        height: 489px;
+        height: 100vh;
     }
 
     #wrap #main .wrap .section_wrapper #section_contact .container_wrap {
@@ -618,7 +620,7 @@
 
     .home .swiper-horizontal>.swiper-pagination-bullets, .home .swiper-pagination-bullets.swiper-pagination-horizontal {
         justify-content: flex-start;
-        margin-left: 10px;
+        margin-left: 1.162vw;
     }
 
     /* section_banner */
@@ -658,35 +660,44 @@
         height: 9vw;
     }
 
-    #wrap #main .wrap .section_wrapper #section_banner #mobileCSS {
-        top: auto;
-        bottom: 15%;
-        left: 16px;
-    }
-    #wrap #main .wrap .section_wrapper #section_banner #mobileCSS_1 {
-        top: auto;
-        bottom: 20%;
-        left: 16px;
+    /* content_2 */
+    #wrap #main .wrap .section_wrapper #section_banner .content .content_wrap .header img {
+        width: 9vw;
+        height: 9vw;
+        /* margin-bottom: 21px; */
     }
 
-    #wrap #main .wrap .section_wrapper #section_banner .content_1 .content_wrap .header .title {
+    #wrap #main .wrap .section_wrapper #section_banner .content .content_wrap .header .title {
         font-size: 4vw;
     }
 
-    #wrap #main .wrap .section_wrapper #section_banner .content_1 .content_wrap .body .title {
+    #wrap #main .wrap .section_wrapper #section_banner .content .content_wrap .body .title {
         font-size: 5vw;
+        margin-bottom:1.757vw;
     }
 
-    #wrap #main .wrap .section_wrapper #section_banner .content_1 .content_wrap .footer a {
+    #wrap #main .wrap .section_wrapper #section_banner .content .content_wrap .footer {}
+
+
+    #wrap #main .wrap .section_wrapper #section_banner .content .content_wrap .footer a {
         width: 24.324vw;
         height: 7.297vw;
     }
-    #wrap #main .wrap .section_wrapper #section_banner .content_1 .content_wrap .footer {}
 
-    #wrap #main .wrap .section_wrapper #section_banner .content_1 .content_wrap .footer a {}
-
-    #wrap #main .wrap .section_wrapper #section_banner .content_1 .content_wrap .footer a .click_btn {
+    #wrap #main .wrap .section_wrapper #section_banner .content .content_wrap .footer a .click_btn {
         font-size: 3.2vw;
+    }
+
+    #wrap #main .wrap .section_wrapper #section_banner .content .content_wrap .header img {
+        width: 9vw;
+        height: 9vw;
+        margin-bottom:3.243vw;
+    }
+
+    #wrap #main .wrap .section_wrapper #section_banner #mobileCSS {
+        top:57%;
+        bottom: 15%;
+        left: 2.162vw;
     }
 
     #wrap #main .wrap .section_wrapper #section_banner .banner {}
@@ -863,16 +874,16 @@
     /*section_goal */
 
     #wrap #main .wrap .section_wrapper #section_goal {
-        height: 930px;
+        height: 100vh
     }
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap {
-        height: 739px;
-        top: 16.351vw;
+        /* height: 739px; */
+        top: 19.351vw;
     }
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap .title {
-        margin: 0 0 12px 0;
+        margin: 0 0 1.622vw 0;
     }
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap .title h1 {
@@ -886,17 +897,21 @@
     }
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap .goal {
-        /* width: 307px;
-        top: 100px;
-        transform: none;
-        left: 12px; */
         top: 20vw;
         transform: none;
         left: 2vw;
+        width: 41.486vw;
+    }
+    #wrap #main .wrap .section_wrapper #section_goal .container_wrap .banner #mobile {
+        display: block;
+    }
+    #wrap #main .wrap .section_wrapper #section_goal .container_wrap .banner #pc {
+        display: none;
     }
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap .goal h2 {
         font-size:3.784vw;
+        margin: 0 0 1.757vw 0px;
     }
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap .goal p {
@@ -906,6 +921,8 @@
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap .introduce {
         width: 95%;
+        margin-top: 5.676vw;
+        margin-bottom: 9.459vw;
     }
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap .introduce .title h2 {
@@ -919,6 +936,13 @@
     }
 
     /*section_news*/
+
+    #wrap #main .wrap .section_wrapper #section_news {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        height: 100vh;
+    }
 
     #wrap #main .wrap .section_wrapper #section_news .container_wrap {
         width: 95%;
