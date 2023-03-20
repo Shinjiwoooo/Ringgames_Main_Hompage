@@ -1,18 +1,18 @@
 @media screen and (max-width:1024px) {
     #wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_hover {
         position: absolute;
-        width: 180px;
-        height: 53px;
+        width: 17.578vw;
+        height: 5.078vw;
         opacity: 0;
         transition: 0.1s;
-        top:-3px;
+        /* top:-3px; */
     }
 
     #wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_hover p {
         font-family: 'Pretendard';
         font-style: normal;
         font-weight: 700;
-        font-size: 18px;
+        font-size: 1.758vw;
         letter-spacing: -0.02em;   
         color: #FFFFFF;
     }
@@ -382,8 +382,8 @@
     }
 
     #wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_pc {
-        width: 38px;
-        height: 38px;
+        width: 4.711vw;
+        height: 4.711vw;
     }
 
     #wrap #main .wrap .section_wrapper #section_career .scroll_container {}
@@ -1119,6 +1119,10 @@
         width: calc(100% / 2 - 20px);
     }
 
+    #wrap #main .wrap .section_wrapper #section_content ul li:nth-child(2n) {
+        margin-right:0px
+    }
+
     #wrap #main .wrap .section_wrapper #section_content ul li img {
         margin: 0 0 5vw 0;
     }
@@ -1149,7 +1153,7 @@
     }
 
     #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul {
-        padding: 70px 0 50px 0;
+        padding: 9.459vw 0 6.757vw 0;
     }
 
 
@@ -1172,12 +1176,12 @@
 
     #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul .border_line {
         border-top: none;
-        height: 107px;
+        height: 14.459vw;;
     }
 
     #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul .border_line .bold {
         font-size: 7.027vw;
-        margin-bottom: 55px;
+        margin-bottom: 7.432vw;
     }
 
     #wrap #main .wrap .section_wrapper #section_we .menu_wrapper {
@@ -1260,6 +1264,7 @@
         height: 280px;
         object-fit: cover;
     }
+    
 
 
     #wrap #main .wrap .section_wrapper #section_content ul li .text_box p {

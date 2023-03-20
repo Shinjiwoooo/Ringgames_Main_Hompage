@@ -86,26 +86,36 @@ footer:1 */
 }
 
 #wrap #main .wrap .section_wrapper #section_career .banner .title_container  a {
-    display: flex;
+    /* display: flex;
     align-items: center;
     flex-direction: column;
-    position: relative;
+    position: relative; */
     /* background-color: yellow; */
 }
 
 /* 여기서부터 */
 #wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_pc {
-    width: 90px;
-    height: 90px;
+    width:4.688vw;
+    height: 4.688vw;
     position: relative;
+    cursor: pointer;
+ 
+}
+.btn_wrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 #wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_hover {
     position: absolute;
-    width: 314px;
-    height: 90px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 800;
+    width: 16.354vw;
+    height: 4.688vw;
     opacity: 0;
-    transition: 0.1s;
+    visibility:hidden;
 }
 
 #wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_hover p {
@@ -114,7 +124,7 @@ footer:1 */
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: 700;
-    font-size: 36px;
+    font-size: 1.875vw;
     line-height: 43px;
     display: flex;
     align-items: center;
@@ -124,9 +134,9 @@ footer:1 */
 }
 
 
-#wrap #main .wrap .section_wrapper #section_career .banner .title_container  a:hover .btn_hover {
+/* #wrap #main .wrap .section_wrapper #section_career .banner .title_container  a:hover .btn_hover {
     opacity: 1;
-}
+} */
 /* 여기까지 */
 #wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_mobile {
     display: none;
@@ -289,7 +299,6 @@ footer:1 */
 
 #wrap #main .wrap .section_wrapper #section_content ul li {
     background: #FFFFFF;
-    /* padding: 54px 0 0 0; */
     padding: 3vw 0 0 0;
     display: flex;
     flex-direction: column;
@@ -300,6 +309,43 @@ footer:1 */
     margin-bottom: 20px;
     border-radius: 10px;
 }
+/* #wrap #main .wrap .section_wrapper #section_content ul .col1{
+    background: #FFFFFF;
+
+    padding: 3vw 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: calc(25% / 4 - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+#wrap #main .wrap .section_wrapper #section_content ul  .col2{
+    background: #FFFFFF;
+
+    padding: 3vw 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: calc(25%);
+
+}
+#wrap #main .wrap .section_wrapper #section_content ul li .col3{
+    background: #FFFFFF;
+  
+    padding: 3vw 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: calc(25% / 4 - 20px);
+    margin-left:10px;
+
+} */
+
 /* 2023.01.24 width 를 고정으로 25% 주면 더이상 공간이 없어서 공백을 줄 수 없음
     따라서 calc로 100% 를 4로 나누고 20px 만큼 공백을 만들어서 margin-right 사용함 calc의 사용법은 써있는대로 나눌수 있고 마지막 마이너스는 저만큼 공백을 남기겠다는거임.
 */
