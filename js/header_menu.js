@@ -230,14 +230,12 @@ const HeaderMenu = {
         const btnHover = document.querySelector(".btn_hover") 
 
         btnPc.addEventListener("mouseenter", function(event){
-            event.preventDefault();
             btnHover.style.opacity="1";
             btnHover.style.visibility = "visible";
             btnHover.style.transition="0.5s";
             console.log("안녕");
         });
         btnPc.addEventListener("mouseleave", function(event){
-            event.preventDefault();
             btnHover.style.opacity="0";
             btnHover.style.visibility = "hidden";
             btnHover.style.transition="0.5s";

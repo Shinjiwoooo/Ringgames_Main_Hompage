@@ -98,6 +98,7 @@ footer:1 */
 
 #wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list li a h1 {
     margin: 0 0 16px 0;
+    position: relative;
 }
 
 #wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list li a h1 .category {
@@ -113,9 +114,11 @@ footer:1 */
     display: inline-block;
     position: absolute;
     width: 2px;
-    height: 28px;
+    height: 25px;
     background: #929292;
+    top: 4px;
 }
+
 
 #wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list li a h1 .day {
     font-weight: 300;
@@ -132,6 +135,7 @@ footer:1 */
     line-height: 28px;
     letter-spacing: -0.02em;
     color: #000000;
+    word-break: keep-all;
 }
 
 
