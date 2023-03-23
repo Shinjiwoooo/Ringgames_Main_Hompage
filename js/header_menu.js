@@ -241,8 +241,8 @@ const HeaderMenu = {
             btnHover.style.transition="0.5s";
             console.log("안녕");
         });
-        // btnPc.addEventListener("mouseenter", iconHover)
-        // btnPc.addEventListener("mouseenter", iconHover_2)
+        btnPc.addEventListener("mouseenter", iconHover)
+        btnPc.addEventListener("mouseenter", iconHover_2)
 
         // function iconHover(event){
         //     event.preventDefault();

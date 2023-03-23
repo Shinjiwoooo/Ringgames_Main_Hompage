@@ -101,8 +101,8 @@
                                                         <span class="bar"></span>
                                                         <span class="day">22.09.08</span>
                                                     </h1>
-                                                    <p>[인터뷰 - 링게임즈 윤주호 대표] “’스텔라 판타지’로<br>
-                                                        블록체인 넘어 글로벌 일본풍 애니 서브컬쳐 마니아까지<br>
+                                                    <p>[인터뷰 - 링게임즈 윤주호 대표] “’스텔라 판타지’로
+                                                        블록체인 넘어 글로벌 일본풍 애니 서브컬쳐 마니아까지
                                                         모두 만족시킬 것”</p>
                                                 </a>
                                             </li>
@@ -115,7 +115,7 @@
                                                         <span class="bar"></span>
                                                         <span class="day">22.09.08</span>
                                                     </h1>
-                                                    <p>P2E 게임 스타트업 링게임즈, 82억원 투자 유치…<br>
+                                                    <p>P2E 게임 스타트업 링게임즈, 82억원 투자 유치…
                                                         카카오도 '찜'</p>
                                                 </a>
                                             </li>
@@ -147,8 +147,8 @@
                                                         <span class="bar"></span>
                                                         <span class="day">22.09.08</span>
                                                     </h1>
-                                                    <p>[인터뷰 - 링게임즈 윤주호 대표] “’스텔라 판타지’로<br>
-                                                        블록체인 넘어 글로벌 일본풍 애니 서브컬쳐 마니아까지<br>
+                                                    <p>[인터뷰 - 링게임즈 윤주호 대표] “’스텔라 판타지’로
+                                                        블록체인 넘어 글로벌 일본풍 애니 서브컬쳐 마니아까지
                                                         모두 만족시킬 것”</p>
                                                 </a>
                                             </li>
@@ -161,7 +161,7 @@
                                                         <span class="bar"></span>
                                                         <span class="day">22.09.08</span>
                                                     </h1>
-                                                    <p>P2E 게임 스타트업 링게임즈, 82억원 투자 유치…<br>
+                                                    <p>P2E 게임 스타트업 링게임즈, 82억원 투자 유치…
                                                         카카오도 '찜'</p>
                                                 </a>
                                             </li>
@@ -239,26 +239,41 @@
     <script src="js/header_menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            pagination: {
-                el: ".pagination",
-                type: 'bullets',
-                clickable: true,
-                renderBullet: function (index, className) {
-                    return '<span class="' + className + '">' + (index + 1) + "</span>";
-                },
-            },
-            navigation: {   // 버튼
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
+        var ww = window.innerWidth;
+        var mySwiper_1 = undefined;
+        function initSwiper() {
+            if (ww > 740 && mySwiper_1 == undefined) {
+                mySwiper_1 = new Swiper(".mySwiper", {
+                    pagination: {
+                        el: ".pagination",
+                        type: 'bullets',
+                        clickable: true,
+                        renderBullet: function (index, className) {
+                            return '<span class="' + className + '">' + (index + 1) + "</span>";
+                        },
+                    },
+                    navigation: {   // 버튼
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    spaceBetween : 30,
+                    loopFillGroupWithBlank : true,
+                });
+                } else if (ww <= 740 && mySwiper_1 != undefined) {
+                mySwiper_1.destroy();
+                mySwiper_1= undefined;
+                }
+        }
+        initSwiper();
 
-            
-        });
+    window.addEventListener('resize',function(){
+        var ww = window.innerWidth;
+        initSwiper();
+    });
 
-        
     </script>
 
 

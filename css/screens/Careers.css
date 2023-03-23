@@ -107,6 +107,12 @@ footer:1 */
     justify-content: center;
 }
 
+.wa{
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    transition: -webkit-transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity .4s;
+    transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity
+}
 #wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_hover {
     position: absolute;
     left:50%;

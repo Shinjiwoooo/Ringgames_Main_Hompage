@@ -1,18 +1,18 @@
 @media screen and (max-width:1024px) {
     #wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_hover {
         position: absolute;
-        width: 17.578vw;
-        height: 5.078vw;
+        width: 180px;
+        height: 53px;
         opacity: 0;
         transition: 0.1s;
-        /* top:-3px; */
+        top:-3px;
     }
 
     #wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_hover p {
         font-family: 'Pretendard';
         font-style: normal;
         font-weight: 700;
-        font-size: 1.758vw;
+        font-size: 18px;
         letter-spacing: -0.02em;   
         color: #FFFFFF;
     }
@@ -278,7 +278,7 @@
     
 
     #wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list li a img {
-        width: 28.906vw;
+        width: 100%;
         object-fit: cover;
         margin-bottom: 12px;
     }
@@ -382,8 +382,8 @@
     }
 
     #wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_pc {
-        width: 4.711vw;
-        height: 4.711vw;
+        width: 38px;
+        height: 38px;
     }
 
     #wrap #main .wrap .section_wrapper #section_career .scroll_container {}
@@ -602,7 +602,7 @@
 }
 
 @media screen and (max-width:740px) {
-  
+
     /* header */
     #wrap #header {
         height: 14vw;
@@ -941,21 +941,12 @@
         position: relative;
         top: 0px;
         left: 0px;
-        height:100%;
+        height: 100%;
     }
 
     #wrap #main .wrap .section_wrapper #section_news .container_wrap {
         width: 95%;
         margin-top: 16.486vw;
-    }
-
-    #wrap #main .wrap .section_wrapper #section_news .container_wrap .pagination_wrap {
-        width: 100%;
-        display: block;
-        margin-top: 39px;
-        margin-bottom: 60px;
-        text-align: center;
-        position: relative;
     }
 
     #wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list {
@@ -1128,10 +1119,6 @@
         width: calc(100% / 2 - 20px);
     }
 
-    #wrap #main .wrap .section_wrapper #section_content ul li:nth-child(2n) {
-        margin-right:0px
-    }
-
     #wrap #main .wrap .section_wrapper #section_content ul li img {
         margin: 0 0 5vw 0;
     }
@@ -1162,7 +1149,7 @@
     }
 
     #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul {
-        padding: 9.459vw 0 6.757vw 0;
+        padding: 70px 0 50px 0;
     }
 
 
@@ -1185,12 +1172,12 @@
 
     #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul .border_line {
         border-top: none;
-        height: 14.459vw;;
+        height: 107px;
     }
 
     #wrap #main .wrap .section_wrapper #section_we .menu_wrapper ul .border_line .bold {
         font-size: 7.027vw;
-        margin-bottom: 7.432vw;
+        margin-bottom: 55px;
     }
 
     #wrap #main .wrap .section_wrapper #section_we .menu_wrapper {
@@ -1273,7 +1260,6 @@
         height: 280px;
         object-fit: cover;
     }
-    
 
 
     #wrap #main .wrap .section_wrapper #section_content ul li .text_box p {
