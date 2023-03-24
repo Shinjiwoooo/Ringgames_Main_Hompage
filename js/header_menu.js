@@ -2,7 +2,7 @@ const HeaderMenu = {
     init:function(){
         this.pcMenuFunc();
         this.mobileMenuFunc();
-        this.iconHover();
+        // this.iconHover();
     },
 
     pcMenuFunc : function() {
@@ -224,43 +224,29 @@ const HeaderMenu = {
 
     },
 
-    iconHover:function(){
+    // iconHover:function(){
         
-        const btnPc = document.querySelector(".btn_pc")
-        const btnHover = document.querySelector(".btn_hover") 
+    //     const btnPc = document.querySelector(".btn_pc")
+    //     const btnHover = document.querySelector(".btn_hover") 
+    //     const triangle = document.querySelector(".triangle")
 
-        btnPc.addEventListener("mouseenter", function(event){
-            btnHover.style.opacity="1";
-            btnHover.style.visibility = "visible";
-            btnHover.style.transition="0.5s";
-            console.log("안녕");
-        });
-        btnPc.addEventListener("mouseleave", function(event){
-            btnHover.style.opacity="0";
-            btnHover.style.visibility = "hidden";
-            btnHover.style.transition="0.5s";
-            console.log("안녕");
-        });
-        btnPc.addEventListener("mouseenter", iconHover)
-        btnPc.addEventListener("mouseenter", iconHover_2)
+    //     btnPc.addEventListener("mouseenter", function(event){
+    //         btnHover.style.opacity="1";
+    //         btnHover.style.visibility = "visible";
+    //         btnHover.style.transition="0.5s";
+    //         // triangle.style.display ="none"
+    //         console.log(triangle)
+    //         console.log("마우스들어옴");
 
-        // function iconHover(event){
-        //     event.preventDefault();
-        //     btnHover.style.opacity="1";
-        //     btnHover.style.visibility = "visible";
-        //     btnHover.style.transition="0.9s";
-        //     console.log("안녕");
-        // }
-        // function iconHover_2(event){
-        //     event.preventDefault();
-        //     btnHover.style.opacity="0";
-        //     btnHover.style.visibility = "hidden";
-        //     btnHover.style.transition="0.9s";
-        //     console.log("안녕");
-        // }
-
+    //     });
+    //     btnPc.addEventListener("mouseleave", function(event){
+    //         btnHover.style.opacity="0";
+    //         btnHover.style.visibility = "hidden";
+    //         btnHover.style.transition="0.5s";
+    //         console.log("마우스나감");
+    //     });
         
-    },
+    // },
 
 
 }
