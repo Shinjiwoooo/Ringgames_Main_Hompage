@@ -213,6 +213,7 @@
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap {
         top: 91px;
         top: 8.887vw;
+        margin-top:8.887vw;
         /* height: 587px; */
     }
 
@@ -343,16 +344,6 @@
         position: absolute;
         /* top: -10px; */
         /* background-color: rgb(144, 124, 255); */
-    }
-
-
-    .fib {
-
-        width: 135px;
-        height: 20px;
-        left: 50%;
-        transform: translatex(-50%);
-        position: relative;
     }
 
 
@@ -492,13 +483,12 @@
     #wrap #main .wrap .section_wrapper #section_content ul {
         width: 90.234vw;
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
     }
 
     #wrap #main .wrap .section_wrapper #section_content ul li {
         padding: 5vw 0 0 0;
         width: calc(100% / 3 - 20px);
-        margin-right: 20px;
         /* 2023.01.24 width 를 고정으로 33% 주면 더이상 공간이 없어서 공백을 줄 수 없음
             따라서 calc로 100% 를 3으로 나누고 20px 만큼 공백을 만들어서 margin-right 사용함 calc의 사용법은 써있는대로 나눌수 있고 마지막 마이너스는 저만큼 공백을 남기겠다는거임.
         */
@@ -879,7 +869,7 @@
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap {
         /* height: 739px; */
-        top: 19.351vw;
+        margin-top: 19.351vw;
     }
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap .title {
@@ -1111,6 +1101,7 @@
 
     #wrap #main .wrap .section_wrapper #section_content ul {
         width: 82.703vw;
+        justify-content: space-around;
     }
 
     #wrap #main .wrap .section_wrapper #section_content ul li {

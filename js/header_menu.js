@@ -2,7 +2,7 @@ const HeaderMenu = {
     init:function(){
         this.pcMenuFunc();
         this.mobileMenuFunc();
-        // this.iconHover();
+        this.iconHover();
     },
 
     pcMenuFunc : function() {
@@ -186,8 +186,7 @@ const HeaderMenu = {
     
     showMobileMenu : function() {
     
-        const mobileMenuArea = document.querySelector("#m_wrap");
-
+            const mobileMenuArea = document.querySelector("#m_wrap");
             const mobileMenuBtnBar01 = document.querySelector(".bar_01");
             const mobileMenuBtnBar02 = document.querySelector(".bar_02");
 
@@ -224,29 +223,32 @@ const HeaderMenu = {
 
     },
 
-    // iconHover:function(){
-        
-    //     const btnPc = document.querySelector(".btn_pc")
-    //     const btnHover = document.querySelector(".btn_hover") 
-    //     const triangle = document.querySelector(".triangle")
+    iconHover:function(){
+        const btnPc = document.querySelector(".btn_pc")
+        const triangle = document.querySelector(".triangle")
+        const btn_hover_trans = document.querySelector(".btn_hover_trans")
 
-    //     btnPc.addEventListener("mouseenter", function(event){
-    //         btnHover.style.opacity="1";
-    //         btnHover.style.visibility = "visible";
-    //         btnHover.style.transition="0.5s";
-    //         // triangle.style.display ="none"
-    //         console.log(triangle)
-    //         console.log("마우스들어옴");
+        console.log(btn_hover_trans)
+        btnPc.addEventListener("mouseenter", function(event){
+            btnPc.classList.remove('btn_pc');            
+            btnPc.classList.add('btn_hover_trans');
+            triangle.style.display ="none"
+    
 
-    //     });
-    //     btnPc.addEventListener("mouseleave", function(event){
-    //         btnHover.style.opacity="0";
-    //         btnHover.style.visibility = "hidden";
-    //         btnHover.style.transition="0.5s";
-    //         console.log("마우스나감");
-    //     });
+        });
+        btnPc.addEventListener("mouseleave", function(event){
+            triangle.style.display="block";
+            btnPc.classList.remove('btn_hover_trans');            
+            btnPc.classList.add('btn_pc');
+            triangle.style.display ="block"
+        });
+
+        btnPc.addEventListener("click", () => {
+            window.open("http://www.gamejob.co.kr/Company/Detail?M=31662837");
+        });
         
-    // },
+        
+    },
 
 
 }
