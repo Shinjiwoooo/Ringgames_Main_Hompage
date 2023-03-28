@@ -1,15 +1,7 @@
-/* z-index 
-header:100 
-main:1 
-wrap:1
-section_wrapper :2
-Preview::after :3
-indicator:3
-footer:1 */
+
 
 #wrap {
     width: 100%;
-    /* height: 100vh; */
     background-color: #F0F2F2;
 }
 
@@ -72,11 +64,21 @@ footer:1 */
     align-items: center;
 }
 
-#wrap #main .wrap .section_wrapper #section_career .banner .title_container .title  {
+#wrap #main .wrap .section_wrapper #section_career .banner .title_container .title {}
 
+#wrap #main .wrap .section_wrapper #section_career .banner .title_container .title p {
+    font-weight: 700;
+    font-size: 52px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    text-shadow: 3px 3px 8px rgb(29 5 108 / 70%);
+    margin: 0 0 17px 0;
 }
 
 #wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_pc {
+    /* width:4.688vw;
+    height: 4.688vw; */
+
     width: 66px;
     height: 66px;
     position: relative;
@@ -90,14 +92,26 @@ footer:1 */
     transition: 0.5s;
 }
 
-#wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_pc .triangle {
+#wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_pc .polygon {
+    width: 40px;
+    height: 36px;
+    background-image: url('/images/polygon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* transition: 0.5s; */
     position: absolute;
-    transform: rotate(360deg);
-    border-bottom: 15px solid transparent;
-    border-top: 15px solid transparent;
-    border-left: 22px solid #F0F2F2;
-    border-right: 18px solid transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-position: 70% 50%;
 }
+
+
+#wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_pc .hover_text {
+    opacity: 0;
+    visibility: hidden;
+}
+
 
 #wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_hover_trans {
     position: relative;
@@ -115,19 +129,14 @@ footer:1 */
     transition: 0.5s;
 }
 
-#wrap #main .wrap .section_wrapper #section_career .banner .title_container .title p {
+#wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_hover_trans p {
+    color: #fff;
     font-weight: 700;
-    font-size: 52px;
-    letter-spacing: -0.02em;
-    color: #FFFFFF;
-    text-shadow: 3px 3px 8px rgb(29 5 108 / 70%);
-    margin: 0 0 17px 0;
+    font-size: 36px;
+    transition: 0.5s;
 }
 
-
-#wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_mobile {
-    display: none;
-}
+#wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_mobile {}
 
 #wrap #main .wrap .section_wrapper #section_career .scroll_container {
     position: absolute;
@@ -135,8 +144,8 @@ footer:1 */
     left: 48.375vw;
 }
 
-#wrap #main .wrap .section_wrapper #section_career .scroll_container  .scroll_wrapper{
-    width:5.365vw;
+#wrap #main .wrap .section_wrapper #section_career .scroll_container .scroll_wrapper {
+    width: 5.365vw;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -168,7 +177,7 @@ footer:1 */
 }
 
 
-#wrap #main .wrap .section_wrapper #section_career  .scroll_container .scroll_wrapper .line {
+#wrap #main .wrap .section_wrapper #section_career .scroll_container .scroll_wrapper .line {
     width: 0.052vw;
     height: 3.490vw;
     overflow: hidden;
@@ -176,11 +185,11 @@ footer:1 */
 
 }
 
-#wrap #main .wrap .section_wrapper #section_career  .scroll_container .scroll_wrapper .line::after {
+#wrap #main .wrap .section_wrapper #section_career .scroll_container .scroll_wrapper .line::after {
     content: "";
     display: block;
     background: #fff;
-    -webkit-animation: scroll  2s 0s infinite;
+    -webkit-animation: scroll 2s 0s infinite;
     animation: scroll 2s 0s infinite;
     height: 100%;
     box-sizing: border-box;
@@ -296,15 +305,7 @@ footer:1 */
     border-radius: 10px;
 }
 
-#wrap #main .wrap .section_wrapper #section_content ul li:last-child {
-   background-color:transparent;
-}
-
-/* 2023.01.24 width 를 고정으로 25% 주면 더이상 공간이 없어서 공백을 줄 수 없음
-    따라서 calc로 100% 를 4로 나누고 20px 만큼 공백을 만들어서 margin-right 사용함 calc의 사용법은 써있는대로 나눌수 있고 마지막 마이너스는 저만큼 공백을 남기겠다는거임.
-*/
 #wrap #main .wrap .section_wrapper #section_content ul li img {
-    /* margin: 0 0 2.5em 0; */
     margin: 0 0 3vw 0;
 }
 
@@ -313,17 +314,16 @@ footer:1 */
     width: 16.927vw;
     height: 1.042vw;
     margin-bottom: 1.5vw;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
-#wrap #main .wrap .section_wrapper #section_content ul li .text_box{
+#wrap #main .wrap .section_wrapper #section_content ul li .text_box {
     width: 100%;
-    height:92px;
+    height: 92px;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-bottom: 1.5em; */
     margin-bottom: 2vw;
 }
 
@@ -335,7 +335,4 @@ footer:1 */
     color: #000000;
     text-align: center;
     line-height: 1.615vw
-
 }
-
-

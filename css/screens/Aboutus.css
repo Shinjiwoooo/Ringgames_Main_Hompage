@@ -38,21 +38,23 @@ footer:1 */
     position: relative;
     top: 0px;
     left: 0px;
+   
 }
 
 #wrap #main .wrap .section_wrapper #section_goal .container_wrap {
     width: 100%;
-    margin-top:172px;
     /* height: 994px; */
     /* position: absolute;
     top: 172px; */
+    margin-top: 172px;
 }
 
+#wrap #main .wrap .section_wrapper #section_goal .container_wrap .container_about {}
 
 
-#wrap #main .wrap .section_wrapper #section_goal .container_wrap  .title {
+#wrap #main .wrap .section_wrapper #section_goal .container_wrap .container_about .title {
     width: 100%;
-    margin: 0 0 2vw 0;
+    margin: 0 0 3vw 0;
 }
 
 #wrap #main .wrap .section_wrapper #section_goal .container_wrap .title h1 {

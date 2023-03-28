@@ -22,12 +22,11 @@ const HeaderMenu = {
         window.addEventListener('scroll', () => {
             let scrollLocation = document.documentElement.scrollTop;
             let widthSize = window.innerWidth ;
-            console.log(window.innerWidth)
-            console.log(document.documentElement.scrollTop)
+            // console.log(window.innerWidth)
+            // console.log(document.documentElement.scrollTop)
             if (scrollLocation <= 1400 && innerWidth>1024) {
                 blackChangeBackground.style.background = "#F0F2F2";
                 blackChangeBackground.style.transition = "0.5s";
-                
                 // test.forEach((item, idx) => {
                 //     item.style.background = "#F0F2F2";
                 //     item.style.transition = "0.5s";
@@ -186,7 +185,8 @@ const HeaderMenu = {
     
     showMobileMenu : function() {
     
-            const mobileMenuArea = document.querySelector("#m_wrap");
+        const mobileMenuArea = document.querySelector("#m_wrap");
+
             const mobileMenuBtnBar01 = document.querySelector(".bar_01");
             const mobileMenuBtnBar02 = document.querySelector(".bar_02");
 
@@ -224,29 +224,54 @@ const HeaderMenu = {
     },
 
     iconHover:function(){
+        
         const btnPc = document.querySelector(".btn_pc")
+        const btnHover = document.querySelector(".btn_hover") 
         const triangle = document.querySelector(".triangle")
-        const btn_hover_trans = document.querySelector(".btn_hover_trans")
+        const polygon = document.querySelector(".polygon");
 
-        console.log(btn_hover_trans)
+        // btnPc.style.transition = 'none';
+
         btnPc.addEventListener("mouseenter", function(event){
-            btnPc.classList.remove('btn_pc');            
+
+            btnPc.style.transition = '0.5s';
+            polygon.style.transition = '0.5s';
+            polygon.style.opacity = '0';
+            btnPc.classList.remove('btn_pc');
             btnPc.classList.add('btn_hover_trans');
-            triangle.style.display ="none"
-    
+
+            /*
+            btnHover.style.opacity="1";
+            btnHover.style.visibility = "visible";
+            btnHover.style.transition="0.5s";
+            // triangle.style.display ="none"
+            console.log(triangle)
+            console.log("마우스들어옴");
+            */
 
         });
         btnPc.addEventListener("mouseleave", function(event){
-            triangle.style.display="block";
-            btnPc.classList.remove('btn_hover_trans');            
+            
+
+            btnPc.classList.remove('btn_hover_trans');
+            setTimeout(() => {
+                polygon.style.opacity = '1';
+            }, 200);
             btnPc.classList.add('btn_pc');
-            triangle.style.display ="block"
+            btnPc.classList.remove('btn_hover_trans');
+            /*
+            btnHover.style.opacity="0";
+            btnHover.style.visibility = "hidden";
+            btnHover.style.transition="0.5s";
+            console.log("마우스나감");
+            */
+
+
         });
 
         btnPc.addEventListener("click", () => {
             window.open("http://www.gamejob.co.kr/Company/Detail?M=31662837");
         });
-        
         
     },
 
