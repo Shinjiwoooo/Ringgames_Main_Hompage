@@ -229,8 +229,14 @@ const HeaderMenu = {
         const btnHover = document.querySelector(".btn_hover") 
         const triangle = document.querySelector(".triangle")
         const polygon = document.querySelector(".polygon");
+        // let widthSize = window.innerWidth;
+        // btnPc.style.transition = 'none'; 
+            // if(widthSize < 1024 && widthSize > 740){
+            //     polygon.classList.add =('polygon_1')
+                
+            // }else{
 
-        // btnPc.style.transition = 'none';
+            // }
 
         btnPc.addEventListener("mouseenter", function(event){
 

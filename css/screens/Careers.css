@@ -91,6 +91,9 @@
     justify-content: flex-end;
     transition: 0.5s;
 }
+#wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_mobile {
+    display:none;
+}
 
 #wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_pc .polygon {
     width: 40px;

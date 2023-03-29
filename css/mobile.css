@@ -214,9 +214,9 @@
     }
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap {
-        top: 91px;
-        top: 8.887vw;
-        
+        /* top: 91px;
+        top: 8.887vw; */
+        margin-top: 91px;
         /* height: 587px; */
     }
 
@@ -250,6 +250,7 @@
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap .goal {
         /* top: 160px; */
         top: 16vw;
+        left: 45%;
     }
 
     /* News */
@@ -882,7 +883,8 @@
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap {
         /* height: 739px; */
-        top: 19.351vw;
+        /* top: 19.351vw; */
+        margin-top: 19.351vw;
     }
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap .title {
