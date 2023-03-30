@@ -206,6 +206,11 @@
 
 }
 
+.news .swiper-horizontal>.swiper-pagination-bullets, .news .swiper-pagination-bullets.swiper-pagination-horizontal {
+
+    bottom:auto;
+}
+
 /* .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
     bottom: var(--swiper-pagination-bottom,8px);
     top: 1px!important;

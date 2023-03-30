@@ -35,7 +35,6 @@ const HeaderMenu = {
                 blackChangeBackground.style.background = "#F0F2F2";
                 blackChangeBackground.style.transition = "0.5s";
             }else {
-                // blackChangeBackground.style.background = "url('/images/change_black_bg.png')";
                 blackChangeBackground.style.background = "#051417";
                 blackChangeBackground.style.transition = "0.5s";
 
@@ -46,17 +45,6 @@ const HeaderMenu = {
             }
 
         })
-
-
-        // window.addEventListener('resize', function(){
-        //     const img = document.querySelector(".container_about .banner #pc")
-        //     const widthSize = window.innerWidth ;
-        //     if(widthSize >= 740){
-        //         img.src = './images/about_us_banner.jpg'
-        //     }else{
-        //         img.src ='./images/about_us_banner_mb.jpg'
-        //     }
-        // });
 
     },
 
@@ -189,7 +177,13 @@ const HeaderMenu = {
 
             const mobileMenuBtnBar01 = document.querySelector(".bar_01");
             const mobileMenuBtnBar02 = document.querySelector(".bar_02");
+            // let widthSize = window.innerWidth ;
+            // console.log(widthSize)
 
+            // if(widthSize > 740){
+            //     mobileMenuArea.style.display ="none";
+            // }
+            // else 
             
         if(mobileMenuArea.style.right == "" || mobileMenuArea.style.right == "-300px") {
             console.log(mobileMenuArea.style.right == "" || mobileMenuArea.style.right == "-300px")
@@ -221,6 +215,8 @@ const HeaderMenu = {
             mobileMenuBtnBar02.style.transition = '0.2s';
         }
 
+        
+
     },
 
     iconHover:function(){
@@ -229,31 +225,16 @@ const HeaderMenu = {
         const btnHover = document.querySelector(".btn_hover") 
         const triangle = document.querySelector(".triangle")
         const polygon = document.querySelector(".polygon");
-        // let widthSize = window.innerWidth;
-        // btnPc.style.transition = 'none'; 
-            // if(widthSize < 1024 && widthSize > 740){
-            //     polygon.classList.add =('polygon_1')
-                
-            // }else{
 
-            // }
+        btnPc.style.transition = 'none';
 
         btnPc.addEventListener("mouseenter", function(event){
 
+            btnPc.classList.remove('btn_pc');
             btnPc.style.transition = '0.5s';
             polygon.style.transition = '0.5s';
             polygon.style.opacity = '0';
-            btnPc.classList.remove('btn_pc');
             btnPc.classList.add('btn_hover_trans');
-
-            /*
-            btnHover.style.opacity="1";
-            btnHover.style.visibility = "visible";
-            btnHover.style.transition="0.5s";
-            // triangle.style.display ="none"
-            console.log(triangle)
-            console.log("마우스들어옴");
-            */
 
         });
         btnPc.addEventListener("mouseleave", function(event){
@@ -264,15 +245,6 @@ const HeaderMenu = {
                 polygon.style.opacity = '1';
             }, 200);
             btnPc.classList.add('btn_pc');
-            btnPc.classList.remove('btn_hover_trans');
-            /*
-            btnHover.style.opacity="0";
-            btnHover.style.visibility = "hidden";
-            btnHover.style.transition="0.5s";
-            console.log("마우스나감");
-            */
-
-
         });
 
         btnPc.addEventListener("click", () => {
@@ -280,7 +252,6 @@ const HeaderMenu = {
         });
         
     },
-
 
 }
 

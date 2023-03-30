@@ -16,10 +16,7 @@
         letter-spacing: -0.02em;   
         color: #FFFFFF;
     }
-
-
     /* header */
-
     #wrap #header {
         height: 48px;
 
@@ -113,7 +110,7 @@
     #wrap #main .wrap .section_wrapper_1 #section_product .container_wrap .content_wrap .container {}
 
     #wrap #main .wrap .section_wrapper_1 #section_product .container_wrap .content_wrap {
-        margin-bottom: 19.531vw;
+        margin-bottom: 39.063vw;
     }
 
 
@@ -221,7 +218,7 @@
     }
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap .title h1 {
-        font-size: 2.539vw;
+        font-size: 26px;
     }
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap .title_wrapper h1 {
@@ -354,7 +351,6 @@
     .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
     .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
 
-
         font-size: 16px;
         color: #000000;
     }
@@ -367,6 +363,23 @@
 
     /* carrers */
 
+    #wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_mobile {
+        display: block;
+        width: 180px;
+        height: 52px;
+        /* height: 90px; */
+        position: relative;
+        cursor: pointer;
+    }
+    .section_wrapper #section_career .banner .title_container .btn_mobile p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 700;
+        font-size: 18px;
+        color: #FFFFFF;
+    }
     #wrap #main .wrap .section_wrapper #section_career .banner .title_container .title p {
         font-weight: 700;
         font-size: 30px;
@@ -376,9 +389,11 @@
         margin: 0px 0px 17px;
     }
 
+
+    
+
     #wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_pc {
-        width: 38px;
-        height: 38px;
+        display: none;
     }
 
     #wrap #main .wrap .section_wrapper #section_career .scroll_container {}
@@ -723,7 +738,7 @@
     }
 
     #wrap #main .wrap .section_wrapper_1 #section_product .container_wrap .content_wrap {
-        margin-bottom: 27.027vw;
+        margin-bottom: 54.054vw;
     }
 
 
@@ -884,7 +899,7 @@
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap {
         /* height: 739px; */
         /* top: 19.351vw; */
-        margin-top: 19.351vw;
+        margin-top: 22.351vw;
     }
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap .title {
@@ -951,7 +966,7 @@
 
     #wrap #main .wrap .section_wrapper #section_news .container_wrap {
         width: 95%;
-        margin-top: 16.486vw;
+        margin-top: 22.351vw;
     }
 
     #wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list {
@@ -1051,7 +1066,7 @@
 
     #wrap #main .wrap .section_wrapper #section_contact .container_wrap {
         width: 100%;
-        margin-top: 16.486vw;
+        margin-top: 22.351vw;
     }
 
     #wrap #main .wrap .section_wrapper #section_contact .container_wrap>h2 {
@@ -1224,7 +1239,7 @@
     #wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_mobile {
         display: block;
         width: 42.432vw;
-        /* height: 90px; */
+        height: 12.162vw;
         position: relative;
         cursor: pointer;
     }
