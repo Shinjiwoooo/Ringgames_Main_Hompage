@@ -16,16 +16,21 @@
       <meta content="yes" name="apple-mobile-web-app-capable" />
       <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
       <meta name="HandheldFriendly" content="true">
+    <script>
+        document.addEventListener("contextmenu", function(event){
+        event.preventDefault();
+        }, false);
+    </script>
     <title>Ring Games</title>
 </head>
-
 <body style="background: #000000;">
+    <body oncontextmenu="return false">
     <!-- 젠코딩
         div#wrap>header#header>(div.container>(div.left>a)>(div.right>ul>li*5))+main#main>div.section_wrapper$*3 -->
     <div id="wrap">
         <header id="header">
             <div class="wrap">
-                <a href="#">
+                <a href="index.html">
                     <img src="images/CI.png" alt="">
                 </a>
                 <div class="container">

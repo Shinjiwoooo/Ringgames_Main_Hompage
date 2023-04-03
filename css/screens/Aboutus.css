@@ -38,7 +38,7 @@ footer:1 */
     position: relative;
     top: 0px;
     left: 0px;
-   
+
 }
 
 #wrap #main .wrap .section_wrapper #section_goal .container_wrap {
@@ -70,8 +70,8 @@ footer:1 */
 }
 
 
-#wrap #main .wrap .section_wrapper #section_goal .container_wrap .banner  #mobile{
-   display: none;
+#wrap #main .wrap .section_wrapper #section_goal .container_wrap .banner #mobile {
+    display: none;
 }
 
 
@@ -114,8 +114,9 @@ footer:1 */
 #wrap #main .wrap .section_wrapper #section_goal .container_wrap .introduce {
     width: 79.271vw;
     margin: 0 auto;
-    margin-top:72px;
-    margin-bottom:196px;
+    margin-top: 72px;
+    /* margin-bottom:196px; */
+    padding-bottom: 196px;
 }
 
 #wrap #main .wrap .section_wrapper #section_goal .container_wrap .introduce .title {}

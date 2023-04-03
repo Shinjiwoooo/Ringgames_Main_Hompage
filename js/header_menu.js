@@ -7,7 +7,8 @@ const HeaderMenu = {
 
     pcMenuFunc : function() {
         const pcMenu = document.querySelectorAll(".menu li a");
-        const blackChangeBackground = document.querySelector(".blackBg");
+        const m_wrap = document.querySelector(".m_wrap");
+        const blackChangeBackground = document.querySelector(".backgroundImgZone");
 
         for(let i = 0; i < pcMenu.length; i++){
             pcMenu[i].addEventListener("mouseenter", this.moveHoverLine);
@@ -17,32 +18,42 @@ const HeaderMenu = {
         this.menuLineCheck(window.location.pathname.split("/")[window.location.pathname.split("/").length - 1]);
         this.currStateCheck(window.location.pathname.split("/")[window.location.pathname.split("/").length - 1], pcMenu);
 
-
+        
         
         window.addEventListener('scroll', () => {
             let scrollLocation = document.documentElement.scrollTop;
-            let widthSize = window.innerWidth ;
-            // console.log(window.innerWidth)
-            // console.log(document.documentElement.scrollTop)
-            if (scrollLocation <= 1400 && innerWidth>1024) {
-                blackChangeBackground.style.background = "#F0F2F2";
+            // let widthSize = window.innerWidth;
+            let responsiveScrollLocation = Math.floor((scrollLocation / (document.documentElement.scrollHeight - document.documentElement.clientHeight)) * 100);
+            // console.log(responsiveScrollLocation)
+            if (responsiveScrollLocation > 53) {
+                blackChangeBackground.style.background = "linear-gradient(180deg, #003445 0%, #030916 100%)";
+                blackChangeBackground.style.backgroundColor = "#030916";
+                blackChangeBackground.style.backgroundImage = "url('/images/star.png')";
+                
                 blackChangeBackground.style.transition = "0.5s";
-                // test.forEach((item, idx) => {
-                //     item.style.background = "#F0F2F2";
-                //     item.style.transition = "0.5s";
-                // })
-            }else if(scrollLocation <= 800 && innerWidth<= 1024){
-                blackChangeBackground.style.background = "#F0F2F2";
+            } else {
+                
+                blackChangeBackground.style.backgroundColor = "#F0F2F2";
+                blackChangeBackground.style.backgroundImage = "";
                 blackChangeBackground.style.transition = "0.5s";
-            }else {
-                blackChangeBackground.style.background = "#051417";
-                blackChangeBackground.style.transition = "0.5s";
-
-                // test.forEach((item, idx) => {
-                //     item.style.background = "#051417";
-                //     item.style.transition = "0.5s";
-                // })
             }
+
+            // if (scrollLocation <= 1400 && innerWidth>1024) {
+            //     blackChangeBackground.style.backgroundColor = "#F0F2F2";
+            //     blackChangeBackground.style.backgroundImage = "";
+            //     blackChangeBackground.style.transition = "0.5s";
+
+  
+            // }else if(scrollLocation <= 800 && innerWidth<= 1024){
+            //     blackChangeBackground.style.backgroundColor = "#F0F2F2";
+            //     blackChangeBackground.style.backgroundImage = "";
+            //     blackChangeBackground.style.transition = "0.5s";
+            // }else {
+            //     blackChangeBackground.style.background = "linear-gradient(180deg, #003445 0%, #030916 100%)";
+            //     blackChangeBackground.style.backgroundImage = "url('/images/star.png')";
+            //     blackChangeBackground.style.transition = "0.5s";
+
+            // }
 
         })
 
@@ -226,30 +237,35 @@ const HeaderMenu = {
         const triangle = document.querySelector(".triangle")
         const polygon = document.querySelector(".polygon");
 
-        btnPc.style.transition = 'none';
+        if (btnPc != null) {
+            btnPc.style.transition = 'none';
 
-        btnPc.addEventListener("mouseenter", function(event){
+            btnPc.addEventListener("mouseenter", function(event){
 
-            btnPc.classList.remove('btn_pc');
-            btnPc.style.transition = '0.5s';
-            polygon.style.transition = '0.5s';
-            polygon.style.opacity = '0';
-            btnPc.classList.add('btn_hover_trans');
+                btnPc.classList.remove('btn_pc');
+                btnPc.style.transition = '0.5s';
+                polygon.style.transition = '0.5s';
+                polygon.style.opacity = '0';
+                btnPc.classList.add('btn_hover_trans');
+    
+            });
+            btnPc.addEventListener("mouseleave", function(event){
+                
+    
+                btnPc.classList.remove('btn_hover_trans');
+                setTimeout(() => {
+                    polygon.style.opacity = '1';
+                }, 200);
+                btnPc.classList.add('btn_pc');
+            });
+    
+            btnPc.addEventListener("click", () => {
+                window.open("http://www.gamejob.co.kr/Company/Detail?M=31662837");
+            });
+        }
+        
 
-        });
-        btnPc.addEventListener("mouseleave", function(event){
-            
-
-            btnPc.classList.remove('btn_hover_trans');
-            setTimeout(() => {
-                polygon.style.opacity = '1';
-            }, 200);
-            btnPc.classList.add('btn_pc');
-        });
-
-        btnPc.addEventListener("click", () => {
-            window.open("http://www.gamejob.co.kr/Company/Detail?M=31662837");
-        });
+        
         
     },
 
