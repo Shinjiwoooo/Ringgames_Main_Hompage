@@ -1,4 +1,5 @@
 @media screen and (max-width:1024px) {
+    
     #wrap #main .wrap .section_wrapper #section_career .banner .title_container .btn_hover {
         position: absolute;
         width: 180px;
@@ -123,6 +124,10 @@
         height: 80px;
 
     }
+
+    /* #wrap #main .wrap .section_wrapper_1 #section_menu .menu_wrapper ul li a:hover {
+        pointer-events: none;
+    } */
 
     #wrap #main .wrap .section_wrapper_1 #section_menu .menu_wrapper ul li a {
         font-size: 40px;
@@ -593,8 +598,14 @@
         margin-bottom: 17px;
     }
 
+    #wrap #main .wrap .section_wrapper #section_contact .container_wrap .container_contact .location .line_2 {
+        border-top: 1px solid #949494;
+        width: 46px;
+        height: 1.5vw;
+    }
+
     #wrap #main .wrap .section_wrapper #section_contact .container_wrap .container_contact .location .line_3 {
-        margin-bottom: 17px;
+        /* margin-bottom: 17px; */
     }
 
     #wrap #main .wrap .section_wrapper #section_contact .container_wrap .container_contact .location p:last-of-type {
@@ -835,8 +846,6 @@
     /* footer */
     #wrap #footer .footer_wrapper_1 {
         height: 154px;
-        /* background: #051417; */
-
     }
 
     #wrap #footer .footer_wrapper_1 .wrap {
@@ -929,7 +938,7 @@
         top: 20vw;
         transform: none;
         left: 2vw;
-        width: 41.486vw;
+        width: 43.486vw;
     }
 
     #wrap #main .wrap .section_wrapper #section_goal .container_wrap .banner #mobile {
@@ -1125,8 +1134,16 @@
         height: 100vh;
     }
 
+    #wrap #main .wrap .section_wrapper #section_contact .container_wrap .container_contact .location .line_2 {
+        width: 18%;
+        height: 5.919vw;
+    }
+
     #wrap #main .wrap .section_wrapper #section_contact .container_wrap .container_contact .location .line_3 {
-        margin-bottom: 3.784vw;
+        border-top: 1px solid #949494;
+        width: 90%;
+        height: 4.784vw;
+        
     }
 
     #wrap #main .wrap .section_wrapper #section_contact .container_wrap .container_contact .location p:last-of-type {

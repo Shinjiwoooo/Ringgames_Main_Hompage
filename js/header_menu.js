@@ -22,9 +22,7 @@ const HeaderMenu = {
         
         window.addEventListener('scroll', () => {
             let scrollLocation = document.documentElement.scrollTop;
-            // let widthSize = window.innerWidth;
             let responsiveScrollLocation = Math.floor((scrollLocation / (document.documentElement.scrollHeight - document.documentElement.clientHeight)) * 100);
-            // console.log(responsiveScrollLocation)
             if (responsiveScrollLocation > 53) {
                 blackChangeBackground.style.background = "linear-gradient(180deg, #003445 0%, #030916 100%)";
                 blackChangeBackground.style.backgroundColor = "#030916";
@@ -37,23 +35,6 @@ const HeaderMenu = {
                 blackChangeBackground.style.backgroundImage = "";
                 blackChangeBackground.style.transition = "0.5s";
             }
-
-            // if (scrollLocation <= 1400 && innerWidth>1024) {
-            //     blackChangeBackground.style.backgroundColor = "#F0F2F2";
-            //     blackChangeBackground.style.backgroundImage = "";
-            //     blackChangeBackground.style.transition = "0.5s";
-
-  
-            // }else if(scrollLocation <= 800 && innerWidth<= 1024){
-            //     blackChangeBackground.style.backgroundColor = "#F0F2F2";
-            //     blackChangeBackground.style.backgroundImage = "";
-            //     blackChangeBackground.style.transition = "0.5s";
-            // }else {
-            //     blackChangeBackground.style.background = "linear-gradient(180deg, #003445 0%, #030916 100%)";
-            //     blackChangeBackground.style.backgroundImage = "url('/images/star.png')";
-            //     blackChangeBackground.style.transition = "0.5s";
-
-            // }
 
         })
 
@@ -188,13 +169,7 @@ const HeaderMenu = {
 
             const mobileMenuBtnBar01 = document.querySelector(".bar_01");
             const mobileMenuBtnBar02 = document.querySelector(".bar_02");
-            // let widthSize = window.innerWidth ;
-            // console.log(widthSize)
 
-            // if(widthSize > 740){
-            //     mobileMenuArea.style.display ="none";
-            // }
-            // else 
             
         if(mobileMenuArea.style.right == "" || mobileMenuArea.style.right == "-300px") {
             console.log(mobileMenuArea.style.right == "" || mobileMenuArea.style.right == "-300px")
