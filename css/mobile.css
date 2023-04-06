@@ -994,6 +994,11 @@
         border-bottom: none;
     }
 
+    #wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list  .news_list_m {
+        display:block;
+    }
+    
+
     #wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list li {
         z-index: 2;
         width: 100%;
@@ -1010,7 +1015,6 @@
     }
 
     #wrap #main .wrap .section_wrapper #section_news .container_wrap .news_list li a img {
-        width: 100vw;
         object-fit: cover;
         margin-bottom: 1.622vw;
         position: relative;
