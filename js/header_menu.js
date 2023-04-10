@@ -9,6 +9,8 @@ const HeaderMenu = {
         const pcMenu = document.querySelectorAll(".menu li a");
         const m_wrap = document.querySelector(".m_wrap");
         const blackChangeBackground = document.querySelector(".backgroundImgZone");
+        const more_btn = document.querySelector(".more_btn")
+
 
         for(let i = 0; i < pcMenu.length; i++){
             pcMenu[i].addEventListener("mouseenter", this.moveHoverLine);
@@ -17,8 +19,6 @@ const HeaderMenu = {
 
         this.menuLineCheck(window.location.pathname.split("/")[window.location.pathname.split("/").length - 1]);
         this.currStateCheck(window.location.pathname.split("/")[window.location.pathname.split("/").length - 1], pcMenu);
-
-        
         
         window.addEventListener('scroll', () => {
             let scrollLocation = document.documentElement.scrollTop;

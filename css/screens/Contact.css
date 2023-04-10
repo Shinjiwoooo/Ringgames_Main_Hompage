@@ -68,7 +68,7 @@ footer:1 */
 #wrap #main .wrap .section_wrapper #section_contact .container_wrap .container_contact .location{
     width:50%;
     height: 100%;
-    padding-right: 13vw;
+    padding-right: 14vw;
     /* margin:0 253px 0 0; */
 }
 
@@ -84,7 +84,7 @@ footer:1 */
 #wrap #main .wrap .section_wrapper #section_contact .container_wrap .container_contact .location p:nth-of-type(2){
     font-weight: 300;
     font-size: 1.5vw;
-    line-height: 36px;
+    line-height: 1.875vw;
     letter-spacing: -0.02em;
     color: #000000;
     margin-bottom: 1.5vw;
